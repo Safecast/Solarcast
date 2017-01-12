@@ -3,7 +3,7 @@ Geiger module is a standalone sensor unit that is a part of the Solarcast assemb
 
 ## Design specification
 * BLE module NRF [nRF52832 ANT](https://www.tindie.com/products/hnhoan/nrf52832-ant-bluetooth-le-arm-cortex-m4f-30-io/)
-* Geiger pancake sensor
+* Geiger pancake sensor (may be a stack of two)
 * Geiger gamma compensated tube sensor
 * Temperature and humidity sensor BME260 sensor (I2C SDO high 0x77)
 * 5V power supply via USB connector (no USB data)
