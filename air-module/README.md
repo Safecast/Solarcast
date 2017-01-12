@@ -8,6 +8,7 @@ Air module is a standalone sensor unit that is a part of the Solarcast assembly 
 * Temperature and humidity sensor BME260 sensor (I2C SDO high 0x77)
 * 5V power supply via USB connector (no USB data)
 * Outdoor enclosure [PNR-2603](http://eu.mouser.com/ProductDetail/Bud-Industries/PNR-2603/?qs=sGAEpiMZZMsrGrAVj6eTvTO11XxqWC53gJbMy7TDIp4%3d)
+* Dual channel high side Switch high-side switch [TPS2034D](http://www.ti.com/product/TPS2034D?keyMatch=TPS2034D&tisearch=Search-EN-Everything) each output for one AIR sensor, with bypass header jumpers.
 
 ## Extended details
 * Waterproof [USB connector](http://eu.mouser.com/ProductDetail/Conxall-Switchcraft/DCP-USBCB-SC/?qs=sGAEpiMZZMulM8LPOQ%252byk0tOUVtDtVQ0KVOITCuLB%252bPJPE9H7T7ELA%3d%3d
