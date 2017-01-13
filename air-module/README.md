@@ -5,7 +5,7 @@ Air module is a standalone sensor unit that is a part of the Solarcast assembly 
 * BLE module NRF [nRF52832 ANT](https://www.tindie.com/products/hnhoan/nrf52832-ant-bluetooth-le-arm-cortex-m4f-30-io/)
 * Particle sensor [Alphasense OPC-N2](http://www.alphasense.com/index.php/products/optical-particle-counter/) (SPI)
 * Particle sensor [PM2.5 PMS 5003](http://www.plantower.com/en/content/?108.html) (UART)
-* Temperature and humidity sensor BME260 sensor (I2C SDO high 0x77)
+* Temperature and humidity sensor BME280 sensor (I2C SDO high 0x77)
 * 5V power supply via USB connector (no USB data)
 * Outdoor enclosure [PNR-2603](http://eu.mouser.com/ProductDetail/Bud-Industries/PNR-2603/?qs=sGAEpiMZZMsrGrAVj6eTvTO11XxqWC53gJbMy7TDIp4%3d)
 * Dual channel high side Switch high-side switch [TPS2034D](http://www.ti.com/product/TPS2034D?keyMatch=TPS2034D&tisearch=Search-EN-Everything) each output for one AIR sensor, with bypass header jumpers.

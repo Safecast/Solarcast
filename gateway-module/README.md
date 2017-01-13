@@ -5,7 +5,7 @@ Gateway module implements LORA communication for two purposes, installing it ins
 * LORA module [Microchip RN2483](http://www.microchip.com/wwwproducts/en/RN2483) for EU band, alternatively RN2903 for US band
 * SMA connector for 434MHz (RF layout guide on [datasheet page 10](http://ww1.microchip.com/downloads/en/DeviceDoc/50002346B.pdf))
 * SMA connector for 868MHz (RF layout guide on [datasheet page 10](http://ww1.microchip.com/downloads/en/DeviceDoc/50002346B.pdf))
-* SSD1306 i2c display
+* SSD1306 i2c display (optional)
 * 5V power supply and an on board 3V3 regulator, such that it can eb used directly from 3V3 as well\
 * Status LED for each RPi and LORA module
 * Temperature and humidity sensor BME260 sensor (I2C SDO high 0x77)
