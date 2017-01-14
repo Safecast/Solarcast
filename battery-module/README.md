@@ -26,9 +26,14 @@ The [Cheero Power Plus 3](https://www.cheero.net/product_tag/power-plus-3/) is a
 Step-up controller: U1 marked AWF608 32pin IC with integrated switch, output connected directly to the battery. Boost DC/DC Charger With Input Current Limiter
 Step-down controller: U11 marked MPFP 8758
 
+Capacity test: 1.5A discharge current : 8800mAh@5V 
+
 
 ### Voltaics V44 solar power bank
-The [Voltaics V44 USB battery](https://www.voltaicsystems.com/v44) is a purpose built solar power bank for charging via solar cell or USB with 12000mAh capacity. Internally it uses a 4P configuration of flat li-po cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features.
+The [Voltaics V44 USB battery](https://www.voltaicsystems.com/v44) is a purpose built solar power bank for charging via solar cell or USB with 12000mAh capacity. Internally it uses a 4P configuration of flat li-po cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features. Charge voltage is 4.25V.
+
+Capacity test: 1.5A discharge current : 6000mAh@5V
+Charge after: 8580mAh@5V
 
 ### Voltaics V44 solar power bank
 The [Voltaics V15 USB battery](https://www.voltaicsystems.com/v15) is an USB power bank with 4000mAh capacity. Internally it uses a 2P configuration of flat cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features.
