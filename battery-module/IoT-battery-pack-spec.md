@@ -29,3 +29,8 @@ IoT battery pack is designed to provide power in various sensing applications, b
  * Target production cost ~15EUR@1k
   * Batteries excluded
  * Prototyping process: 10 units for testing in first batch, 30 units in second batch
+
+## Diagram
+Diagram is made in http://draw.io
+
+![diagram][IoT-battery-pack.svg]
