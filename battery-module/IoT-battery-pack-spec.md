@@ -8,11 +8,13 @@
  * Battery voltage, current measurement, fuel gauge
  * I2C and BLE interface for measurements
  * Configurable max and min battery voltage
- * Individually controllable output though mosfet
+ * Individually controllable output through mosfet
  * Batteries connected in 3 branches of two, each branch fuse protected
  * Charge input disconnect mosfet, reverse output protection
  * Simultaneous charging and discharging
  * Low quiescent current - standby mode with 3.3V branch active no more then 100uA
- * Input current limiter with configurable minimal voltage
+ * Input current limiter with configurable voltage level
+ * Dual DC input USB & DC jack, when USB connected DC jack is disconnected
+ * Expose GPIO pins on a header
 
  * Target production cost ~15EUR@1k
