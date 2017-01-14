@@ -33,4 +33,4 @@ IoT battery pack is designed to provide power in various sensing applications, b
 ## Diagram
 Diagram is made in http://draw.io
 
-![diagram][IoT-battery-pack.svg]
+![diagram](IoT-battery-pack.png)
