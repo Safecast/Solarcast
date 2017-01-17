@@ -19,7 +19,7 @@ Air module is a standalone sensor unit that is a part of the Solarcast assembly 
 ## Connection details
 The devices have the following connection details:
 
-* Alphasense (leftmost wire on connector with wire crimp contacts facing up going away from you)
+* Alphasense (leftmost wire on connector with wire crimp contacts facing up going away from you) Connector: Molex 'Pico Clasp' 6 way Housing, Part Number 501330-0600
  1. 5V
  2. SPI-SCLK
  3. SPI-MISO
@@ -27,7 +27,7 @@ The devices have the following connection details:
  5. SPI-CS
  6. GND
 
-* Plantower
+* Plantower, no connector, solder wires
   1. 5V
   2. GND
   3. N/C
