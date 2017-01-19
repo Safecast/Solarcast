@@ -1,0 +1,15 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"C1,C2,C3,C4,C6,C9";"0603_HandSoldering";6;"100nF";;;
+2;"C5,C7,C8,C10";"0805_HandSoldering";4;"10uF";;;
+3;"D1";"LED_0603_HandSoldering";1;"LED";;;
+4;"J1";"IDC12_connector";1;"IDC12";;;
+5;"JP1,JP2";"Socket_Strip_Straight_1x02";2;"JUMPER";;;
+6;"R1,R4,R5,R11,R12,R13,R14,R15,R16";"0603_HandSoldering";9;"10K";;;
+7;"R3";"0603_HandSoldering";1;"1K";;;
+8;"R7,R8,R9,R10";"0603_HandSoldering";4;"0R";;;
+9;"U1";"Molex_501331-0607";1;"Alphasense_OPC-N2";;;
+10;"U2";"nRF52832-SMD";1;"nRF52832";;;
+11;"U3";"Socket_Strip_Straight_1x08";1;"Plantower_PM2.5_PMS_5003";;;
+12;"U4";"TPS2064";1;"TPS2064";;;
+13;"U5";"BME280";1;"BME280";;;
+14;"U6";"MCP1826S_SOT223";1;"MCP1826S";;;
