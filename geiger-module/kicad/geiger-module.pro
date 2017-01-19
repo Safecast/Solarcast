@@ -1,4 +1,4 @@
-update=19.1.2017 11:16:25
+update=19.1.2017 14:18:01
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,4 @@ LibName39=tps2034
 LibName40=tps2064
 LibName41=tps79133
 LibName42=irover
+LibName43=bc847c
