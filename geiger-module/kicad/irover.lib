@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# iRover
+#
+DEF iRover U 0 40 Y Y 1 F N
+F0 "U" -260 360 60 H V C CNN
+F1 "iRover" -160 -60 60 H V C CNN
+F2 "" -100 20 60 H V C CNN
+F3 "" -100 20 60 H V C CNN
+DRAW
+S -330 300 0 0 0 1 0 N
+X VCC 1 200 240 200 L 50 50 1 1 I
+X SIGNAL 2 200 150 200 L 50 50 1 1 I
+X GND 3 200 60 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
