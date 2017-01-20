@@ -1,0 +1,15 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# iRover
+#
+DEF iRover U 0 40 Y Y 1 F N
+F0 "U" -100 90 60 H V C CNN
+F1 "iRover" 0 -130 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
+#End Library

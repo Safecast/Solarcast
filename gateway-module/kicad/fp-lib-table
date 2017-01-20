@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name 0603_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0603_handsolder.pretty")(options "")(descr ""))
+  (lib (name 0805_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0805_handsolder.pretty")(options "")(descr ""))
+  (lib (name RN2483)(type KiCad)(uri "$(KIPRJMOD)\\RN2483.pretty")(options "")(descr ""))
+)
