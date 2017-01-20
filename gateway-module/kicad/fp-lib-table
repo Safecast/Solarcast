@@ -2,4 +2,8 @@
   (lib (name 0603_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0603_handsolder.pretty")(options "")(descr ""))
   (lib (name 0805_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0805_handsolder.pretty")(options "")(descr ""))
   (lib (name RN2483)(type KiCad)(uri "$(KIPRJMOD)\\RN2483.pretty")(options "")(descr ""))
+  (lib (name BME280)(type KiCad)(uri "$(KIPRJMOD)\\BME280.pretty")(options "")(descr ""))
+  (lib (name RaspberryPi)(type KiCad)(uri "$(KIPRJMOD)\\RaspberryPi.pretty")(options "")(descr ""))
+  (lib (name TPS79133)(type KiCad)(uri "$(KIPRJMOD)\\TPS79133.pretty")(options "")(descr ""))
+  (lib (name Small_I2C_OLED)(type KiCad)(uri "$(KIPRJMOD)\\Small_I2C_OLED.pretty")(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-update=19.1.2017 10:11:11
+update=20.1.2017 13:52:25
 version=1
 last_client=kicad
 [pcbnew]
@@ -74,7 +74,7 @@ LibName42=arm_swd
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../../../
+PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

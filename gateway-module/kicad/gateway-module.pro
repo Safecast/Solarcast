@@ -1,4 +1,4 @@
-update=19.1.2017 15:39:31
+update=20.1.2017 13:42:42
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,9 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=rn2483
+LibName31=rn2903
+LibName32=bme280
+LibName33=raspberrypi
+LibName34=tps79133
+LibName35=sma
+LibName36=small_i2c_oled
