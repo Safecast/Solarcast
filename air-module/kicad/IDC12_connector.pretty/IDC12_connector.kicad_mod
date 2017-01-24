@@ -41,4 +41,9 @@
   (pad 8 thru_hole circle (at 2.54 -1.27) (size 1.50622 1.50622) (drill 0.99822) (layers *.Cu *.Mask))
   (pad 9 thru_hole circle (at 5.08 1.27) (size 1.50622 1.50622) (drill 0.99822) (layers *.Cu *.Mask))
   (pad 10 thru_hole circle (at 5.08 -1.27) (size 1.50622 1.50622) (drill 0.99822) (layers *.Cu *.Mask))
+  (model "../../../../../../Users/user/Desktop/Solarcast - dev/air-module/kicad/IDC12_connector.pretty/IDC12_connector.WRL"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
