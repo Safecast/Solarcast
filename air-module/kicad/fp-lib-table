@@ -13,4 +13,7 @@
   (lib (name TPS79133)(type KiCad)(uri "$(KIPRJMOD)\\TPS79133.pretty")(options "")(descr ""))
   (lib (name DCP-USBCB-SC)(type KiCad)(uri "$(KIPRJMOD)\\DCP-USBCB-SC.pretty")(options "")(descr ""))
   (lib (name 10pin_50mil_header)(type KiCad)(uri "$(KIPRJMOD)\\10pin_50mil_header.pretty")(options "")(descr ""))
+  (lib (name opensource_hardware)(type KiCad)(uri "$(KIPRJMOD)\\opensource_hardware.pretty")(options "")(descr ""))
+  (lib (name OPEN_HW)(type KiCad)(uri "$(KIPRJMOD)\\OPEN_HW.pretty")(options "")(descr ""))
+  (lib (name OPENHARDWARE)(type Legacy)(uri "$(KIPRJMOD)\\OPENHARDWARE.mod")(options "")(descr ""))
 )
