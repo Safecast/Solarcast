@@ -15,4 +15,5 @@
   (lib (name 10pin_50mil_header)(type KiCad)(uri "$(KIPRJMOD)\\10pin_50mil_header.pretty")(options "")(descr ""))
   (lib (name SOD-323_standard)(type KiCad)(uri "$(KIPRJMOD)\\SOD-323_standard.pretty")(options "")(descr ""))
   (lib (name sot_32_standard)(type KiCad)(uri "$(KIPRJMOD)\\sot_32_standard.pretty")(options "")(descr ""))
+  (lib (name B3B-PH-SM4-TB_IROVER_CONNECTOR)(type KiCad)(uri "$(KIPRJMOD)\\B3B-PH-SM4-TB_IROVER_CONNECTOR.pretty")(options "")(descr ""))
 )

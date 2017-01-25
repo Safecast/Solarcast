@@ -1,4 +1,4 @@
-update=19.1.2017 14:18:01
+update=25.1.2017 11:21:23
 version=1
 last_client=kicad
 [pcbnew]
@@ -72,3 +72,4 @@ LibName40=tps2064
 LibName41=tps79133
 LibName42=irover
 LibName43=bc847c
+LibName44=arm_swd_small
