@@ -3,7 +3,7 @@
   (general
     (links 102)
     (no_connects 0)
-    (area 108.291099 76.884599 179.511101 118.132601)
+    (area 108.291099 74.717199 179.511101 118.132601)
     (thickness 1.6)
     (drawings 29)
     (tracks 845)
@@ -21,8 +21,8 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -75,11 +75,11 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 108.285 118.135)
-    (grid_origin 155.455 105.165)
-    (visible_elements 7FFFFF5F)
+    (grid_origin 108.285 118.135)
+    (visible_elements 7FFFFF7F)
     (pcbplotparams
       (layerselection 0x010f0_80000001)
-      (usegerberextensions true)
+      (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -101,7 +101,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ../../../Solarcast/air-module/gerbers/))
+      (outputdirectory ../gerbers/))
   )
 
   (net 0 "")
