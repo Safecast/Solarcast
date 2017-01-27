@@ -3,7 +3,7 @@
   (general
     (links 102)
     (no_connects 0)
-    (area 108.291099 71.097199 179.511101 118.137601)
+    (area 108.291099 76.889599 179.511101 118.137601)
     (thickness 1.6)
     (drawings 32)
     (tracks 987)
@@ -13,6 +13,13 @@
   )
 
   (page A4)
+  (title_block
+    (title "Safecast Air Module")
+    (date 2017-01-27)
+    (rev 1.0)
+    (company "Institute IRNAS Rače")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -37,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.2032)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
@@ -37945,7 +37952,7 @@
   (segment (start 150.465 82.535) (end 151.565 82.535) (width 0.5) (layer B.Cu) (net 1))
   (segment (start 151.2 81.8) (end 150.465 82.535) (width 0.5) (layer F.Cu) (net 1) (tstamp 5888EF31))
   (via (at 150.465 82.535) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
-  (segment (start 151.2 80.8) (end 151.2 81.8) (width 0.5) (layer F.Cu) (net 1) (status 400000))
+  (segment (start 151.2 80.8) (end 151.2 81.8) (width 0.5) (layer F.Cu) (net 1))
   (via (at 151.925 82.175) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 151.565 82.535) (end 151.925 82.175) (width 0.5) (layer B.Cu) (net 1) (tstamp 5888EF36))
   (segment (start 151.925 82.175) (end 152.02 82.08) (width 0.5) (layer F.Cu) (net 1) (tstamp 5888EF38))
