@@ -1,4 +1,4 @@
-update=25.1.2017 11:21:23
+update=30.1.2017 12:32:05
 version=1
 last_client=kicad
 [pcbnew]
@@ -73,3 +73,13 @@ LibName41=tps79133
 LibName42=irover
 LibName43=bc847c
 LibName44=arm_swd_small
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
