@@ -14,8 +14,14 @@ The most straightforward implementation is using a pre-built power bank module, 
  * Battery protection (under-voltage, over-voltage, cell-failure)
  * Low-quiescent current of the DC-DC 5V output stage
 
+# IoT battery pack design
+Upon closer inspection of available systems we have decided to construct our won battery pack for general use with IoT applications and prepared [detailed requirements](IoT-battery-pack-spec.md) for it. The first version of the IoT battery pack has been designed and is being tested. Source files are in this repository.
+
+![PCB preview](IoT-battery-pack.png)
+ 
+ 
 ## Power bank candidates
-Three options have been selected for detailed analysis to determine the best option for implementation:
+Three options have been selected for detailed analysis to determine the best option for implementation.
 
 ### LiPo cell + Adafruit LiPo charger
 Constructing a single cell LiPo power unit from components is feasible and has been tested, however does not feature cell protection and has a single cell configuration, increasing the complexity of the power system due to its operation in battery voltage operational range.
@@ -27,7 +33,6 @@ Step-up controller: U1 marked AWF608 32pin IC with integrated switch, output con
 Step-down controller: U11 marked MPFP 8758
 
 Capacity test: 1.5A discharge current : 8800mAh@5V 
-
 
 ### Voltaics V44 solar power bank
 The [Voltaics V44 USB battery](https://www.voltaicsystems.com/v44) is a purpose built solar power bank for charging via solar cell or USB with 12000mAh capacity. Internally it uses a 4P configuration of flat li-po cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features. Charge voltage is 4.25V.
