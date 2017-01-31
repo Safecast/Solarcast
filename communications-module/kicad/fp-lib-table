@@ -1,0 +1,10 @@
+(fp_lib_table
+  (lib (name 0603_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0603_handsolder.pretty")(options "")(descr ""))
+  (lib (name 0805_handsolder)(type KiCad)(uri "$(KIPRJMOD)\\0805_handsolder.pretty")(options "")(descr ""))
+  (lib (name BME280)(type KiCad)(uri "$(KIPRJMOD)\\BME280.pretty")(options "")(descr ""))
+  (lib (name nRF52832)(type KiCad)(uri "$(KIPRJMOD)\\nRF52832.pretty")(options "")(descr ""))
+  (lib (name INA219)(type KiCad)(uri "$(KIPRJMOD)\\INA219.pretty")(options "")(descr ""))
+  (lib (name FGPMMOPA6H_GPS)(type KiCad)(uri "$(KIPRJMOD)\\FGPMMOPA6H_GPS.pretty")(options "")(descr ""))
+  (lib (name FONA_3G)(type KiCad)(uri "$(KIPRJMOD)\\FONA_3G.pretty")(options "")(descr ""))
+  (lib (name LIS3DH)(type KiCad)(uri "$(KIPRJMOD)\\LIS3DH.pretty")(options "")(descr ""))
+)
