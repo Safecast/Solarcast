@@ -17,7 +17,7 @@ The most straightforward implementation is using a pre-built power bank module, 
 # IoT battery pack design
 Upon closer inspection of available systems we have decided to construct our won battery pack for general use with IoT applications and prepared [detailed requirements](IoT-battery-pack-spec.md) for it. The first version of the IoT battery pack has been designed and is being tested. Source files are in this repository.
 
-![PCB preview](IoT-battery-pack.png)
+![PCB preview](IoT-battery-pack.jpg)
  
  
 ## Power bank candidates
