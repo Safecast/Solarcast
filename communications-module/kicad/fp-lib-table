@@ -7,4 +7,8 @@
   (lib (name FGPMMOPA6H_GPS)(type KiCad)(uri "$(KIPRJMOD)\\FGPMMOPA6H_GPS.pretty")(options "")(descr ""))
   (lib (name FONA_3G)(type KiCad)(uri "$(KIPRJMOD)\\FONA_3G.pretty")(options "")(descr ""))
   (lib (name LIS3DH)(type KiCad)(uri "$(KIPRJMOD)\\LIS3DH.pretty")(options "")(descr ""))
+  (lib (name LIS3DH_breakout)(type KiCad)(uri "$(KIPRJMOD)\\LIS3DH_breakout.pretty")(options "")(descr ""))
+  (lib (name SN74LV4052A)(type KiCad)(uri "$(KIPRJMOD)\\SN74LV4052A.pretty")(options "")(descr ""))
+  (lib (name DCP-USBCB-SC)(type KiCad)(uri "$(KIPRJMOD)\\DCP-USBCB-SC.pretty")(options "")(descr ""))
+  (lib (name LXDC2UR33A-122)(type KiCad)(uri "$(KIPRJMOD)\\LXDC2UR33A-122.pretty")(options "")(descr ""))
 )

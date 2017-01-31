@@ -1,4 +1,4 @@
-update=30.1.2017 15:15:43
+update=31.1.2017 15:20:40
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,6 @@ LibName31=nrf52832
 LibName32=ina219
 LibName33=fgpmmopa6h_gps
 LibName34=fona_3g
+LibName35=lis3dh_breakout
+LibName36=sn74lv4052a
+LibName37=lxdc2ur33a-122
