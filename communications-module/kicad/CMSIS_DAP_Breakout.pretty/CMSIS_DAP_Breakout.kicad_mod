@@ -1,0 +1,8 @@
+(module CMSIS_DAP_Breakout (layer F.Cu) (tedit 5891CBF7)
+  (fp_text reference REF** (at -0.8 -5.25) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (fp_text value CMSIS_DAP_Breakout (at -0.8 -6.25) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

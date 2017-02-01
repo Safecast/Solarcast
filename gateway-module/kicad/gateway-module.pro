@@ -1,4 +1,4 @@
-update=20.1.2017 13:42:42
+update=1.2.2017 12:32:51
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,13 @@ LibName33=raspberrypi
 LibName34=tps79133
 LibName35=sma
 LibName36=small_i2c_oled
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

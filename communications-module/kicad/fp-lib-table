@@ -11,4 +11,8 @@
   (lib (name SN74LV4052A)(type KiCad)(uri "$(KIPRJMOD)\\SN74LV4052A.pretty")(options "")(descr ""))
   (lib (name DCP-USBCB-SC)(type KiCad)(uri "$(KIPRJMOD)\\DCP-USBCB-SC.pretty")(options "")(descr ""))
   (lib (name LXDC2UR33A-122)(type KiCad)(uri "$(KIPRJMOD)\\LXDC2UR33A-122.pretty")(options "")(descr ""))
+  (lib (name "DIP Grove 4P-2.0")(type KiCad)(uri "$(KIPRJMOD)\\DIP Grove 4P-2.0.pretty")(options "")(descr ""))
+  (lib (name LXDC55KAAA-205)(type KiCad)(uri "$(KIPRJMOD)\\LXDC55KAAA-205.pretty")(options "")(descr ""))
+  (lib (name UFL-R-SMT)(type KiCad)(uri "$(KIPRJMOD)\\UFL-R-SMT.pretty")(options "")(descr ""))
+  (lib (name CMSIS_DAP_Breakout)(type KiCad)(uri "$(KIPRJMOD)\\CMSIS_DAP_Breakout.pretty")(options "")(descr ""))
 )
