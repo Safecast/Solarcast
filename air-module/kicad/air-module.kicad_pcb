@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.2032)
     (user_trace_width 0.3)
     (user_trace_width 0.4)
     (user_trace_width 0.5)
@@ -38708,7 +38708,7 @@
   (segment (start 123.645 106.205) (end 122.135 107.715) (width 0.4) (layer F.Cu) (net 28) (tstamp 58936353))
   (segment (start 122.135 107.715) (end 120.415 107.715) (width 0.4) (layer F.Cu) (net 28) (tstamp 5893635A))
   (segment (start 120.415 107.715) (end 119.555 106.855) (width 0.4) (layer F.Cu) (net 28) (tstamp 5893635D))
-  (segment (start 123.845 100.165) (end 123.845 102.065) (width 0.4) (layer F.Cu) (net 28) (status 400000))
+  (segment (start 123.845 100.165) (end 123.845 102.065) (width 0.4) (layer F.Cu) (net 28))
   (via (at 117.435 104.545) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 28))
   (segment (start 118.725 104.545) (end 117.435 104.545) (width 0.4) (layer F.Cu) (net 28) (tstamp 5893638B))
   (segment (start 118.985 104.805) (end 118.725 104.545) (width 0.4) (layer F.Cu) (net 28) (tstamp 58936389))

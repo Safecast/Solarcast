@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source C:/Users/user/Desktop/Solarcast/geiger-module/kicad/geiger-module.sch)
-    (date "30.1.2017 9:08:12")
+    (date "2.2.2017 18:23:18")
     (tool "Eeschema 4.0.0-rc1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title)
-        (company)
-        (rev)
-        (date)
+        (title "Solarcast Geiger Module")
+        (company "Institute IRNAS Rače")
+        (rev 1.0)
+        (date 2017-01-30)
         (source geiger-module.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
@@ -125,7 +125,7 @@
       (tstamp 5881861D))
     (comp (ref C3)
       (value 10uF)
-      (footprint 0603_handsolder:0603_HandSoldering)
+      (footprint 0805_handsolder:0805_HandSoldering)
       (libsource (lib device) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 58819179))
@@ -137,7 +137,7 @@
       (tstamp 5881A64D))
     (comp (ref C8)
       (value 10uF)
-      (footprint 0603_handsolder:0603_HandSoldering)
+      (footprint 0805_handsolder:0805_HandSoldering)
       (libsource (lib device) (part C))
       (sheetpath (names /) (tstamps /))
       (tstamp 5881A659))
@@ -256,13 +256,6 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 58889618)))
   (libparts
-    (libpart (lib device) (part JUMPER)
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) JUMPER))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
     (libpart (lib device) (part LED)
       (footprints
         (fp LED-3MM)
@@ -278,6 +271,13 @@
       (pins
         (pin (num 1) (name K) (type passive))
         (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part JUMPER)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) JUMPER))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib device) (part R)
       (description Resistor)
       (footprints
@@ -289,20 +289,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib conn) (part USB_OTG)
-      (description "micro/mini connector")
-      (footprints
-        (fp USB*))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) USB_OTG))
-      (pins
-        (pin (num 1) (name VCC) (type power_out))
-        (pin (num 2) (name D-) (type passive))
-        (pin (num 3) (name D+) (type passive))
-        (pin (num 4) (name ID) (type power_in))
-        (pin (num 5) (name GND) (type power_in))
-        (pin (num 6) (name shield) (type passive))))
     (libpart (lib bme280) (part BME280)
       (fields
         (field (name Reference) U)
@@ -397,20 +383,20 @@
         (pin (num 2) (name SWDIO) (type input))
         (pin (num 3) (name GND) (type input))
         (pin (num 4) (name SWDCLK) (type input))))
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
+    (libpart (lib conn) (part USB_OTG)
+      (description "micro/mini connector")
       (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
+        (fp USB*))
       (fields
-        (field (name Reference) C)
-        (field (name Value) C))
+        (field (name Reference) P)
+        (field (name Value) USB_OTG))
       (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
+        (pin (num 1) (name VCC) (type power_out))
+        (pin (num 2) (name D-) (type passive))
+        (pin (num 3) (name D+) (type passive))
+        (pin (num 4) (name ID) (type power_in))
+        (pin (num 5) (name GND) (type power_in))
+        (pin (num 6) (name shield) (type passive))))
     (libpart (lib device) (part D)
       (description Diode)
       (footprints
@@ -424,7 +410,21 @@
         (field (name Value) D))
       (pins
         (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive)))))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical conn)
       (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
