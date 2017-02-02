@@ -1,4 +1,4 @@
-update=1.2.2017 15:24:17
+update=2.2.2017 17:25:16
 version=1
 last_client=kicad
 [pcbnew]
@@ -74,3 +74,19 @@ LibName42=ufl_conn
 LibName43=cmsis_dap_breakout
 LibName44=rockblock
 LibName45=pwr_conn
+LibName46=communications-module-cache
+LibName47=idc12
+LibName48=tps2034
+LibName49=tps2064
+LibName50=tps79133
+LibName51=raspberrypi
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

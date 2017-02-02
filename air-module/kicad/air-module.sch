@@ -212,9 +212,9 @@ F 3 "" H 4900 1650 60  0000 C CNN
 $EndComp
 NoConn ~ 4900 1750
 NoConn ~ 4900 2050
-Text GLabel 5575 1525 2    60   Input ~ 0
-MCU-RX
 Text GLabel 5575 2050 2    60   Input ~ 0
+MCU-RX
+Text GLabel 5575 1525 2    60   Input ~ 0
 MCU-TX
 Text GLabel 5575 1875 2    60   Input ~ 0
 TWI-SDA

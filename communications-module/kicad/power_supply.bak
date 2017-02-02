@@ -1,0 +1,946 @@
+EESchema Schematic File Version 2
+LIBS:communications-module-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bme280
+LIBS:nrf52832
+LIBS:ina219
+LIBS:fgpmmopa6h_gps
+LIBS:fona_3g
+LIBS:lis3dh_breakout
+LIBS:sn74lv4052a
+LIBS:lxdc2ur33a-122
+LIBS:i2c_connector
+LIBS:cmsis-dap
+LIBS:lxdc55kaaa-205
+LIBS:ufl_conn
+LIBS:cmsis_dap_breakout
+LIBS:rockblock
+LIBS:pwr_conn
+LIBS:communications-module-cache
+LIBS:idc12
+LIBS:tps2034
+LIBS:tps2064
+LIBS:tps79133
+LIBS:raspberrypi
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "Solarcast Communications Module"
+Date "2017-01-31"
+Rev "1.0"
+Comp "Institute IRNAS Rače"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4265 1970 4785 1970
+Wire Wire Line
+	4110 2070 4785 2070
+Wire Wire Line
+	4265 1815 4265 1970
+Wire Wire Line
+	4110 1975 4110 2070
+Text GLabel 5935 1870 2    60   Input ~ 0
+TWI_SDA
+$Comp
+L GND #PWR017
+U 1 1 589845A1
+P 4785 2270
+F 0 "#PWR017" H 4785 2020 50  0001 C CNN
+F 1 "GND" H 4785 2120 50  0000 C CNN
+F 2 "" H 4785 2270 60  0000 C CNN
+F 3 "" H 4785 2270 60  0000 C CNN
+	1    4785 2270
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 589845A7
+P 5935 2270
+F 0 "#PWR018" H 5935 2020 50  0001 C CNN
+F 1 "GND" H 5935 2120 50  0000 C CNN
+F 2 "" H 5935 2270 60  0000 C CNN
+F 3 "" H 5935 2270 60  0000 C CNN
+	1    5935 2270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 5430 5975 5715
+Connection ~ 5975 5600
+Wire Wire Line
+	6075 5430 6075 5715
+Wire Wire Line
+	6075 5715 6120 5715
+Wire Wire Line
+	6120 5600 6075 5600
+Connection ~ 6075 5600
+Wire Wire Line
+	5975 5715 5920 5715
+Wire Wire Line
+	5920 5600 5975 5600
+Wire Wire Line
+	6175 5430 6330 5430
+Wire Wire Line
+	5875 5430 5715 5430
+Wire Wire Line
+	7960 5430 7960 5715
+Connection ~ 7960 5600
+Wire Wire Line
+	8060 5430 8060 5715
+Wire Wire Line
+	8060 5715 8105 5715
+Wire Wire Line
+	8105 5600 8060 5600
+Connection ~ 8060 5600
+Wire Wire Line
+	7960 5715 7905 5715
+Wire Wire Line
+	7905 5600 7960 5600
+Wire Wire Line
+	8160 5430 8315 5430
+Wire Wire Line
+	7860 5430 7700 5430
+Wire Wire Line
+	3985 5430 3985 5715
+Connection ~ 3985 5600
+Wire Wire Line
+	4085 5430 4085 5715
+Wire Wire Line
+	4085 5715 4130 5715
+Wire Wire Line
+	4130 5600 4085 5600
+Connection ~ 4085 5600
+Wire Wire Line
+	3985 5715 3930 5715
+Wire Wire Line
+	3930 5600 3985 5600
+Wire Wire Line
+	4185 5430 4340 5430
+Wire Wire Line
+	3885 5430 3725 5430
+$Comp
+L USB_A P3
+U 1 1 589859C3
+P 6075 5130
+F 0 "P3" H 6285 5150 50  0000 C CNN
+F 1 "USB_A" H 6025 5330 50  0000 C CNN
+F 2 "" V 6025 5030 60  0000 C CNN
+F 3 "" V 6025 5030 60  0000 C CNN
+	1    6075 5130
+	1    0    0    -1  
+$EndComp
+Text GLabel 5720 5600 0    60   Input ~ 0
+NRF_SWCLK
+Text GLabel 6320 5600 2    60   Input ~ 0
+NRF_SWDIO
+Text GLabel 6320 5715 2    60   Input ~ 0
+TWI_SDA
+Text GLabel 5720 5715 0    60   Input ~ 0
+TWI_SCL
+$Comp
+L Jumper_NC_Small JP7
+U 1 1 589859CE
+P 5820 5600
+F 0 "JP7" H 5820 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5830 5540 50  0001 C CNN
+F 2 "" H 5820 5600 60  0000 C CNN
+F 3 "" H 5820 5600 60  0000 C CNN
+	1    5820 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP8
+U 1 1 589859D5
+P 5820 5715
+F 0 "JP8" H 5820 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 5830 5655 50  0001 C CNN
+F 2 "" H 5820 5715 60  0000 C CNN
+F 3 "" H 5820 5715 60  0000 C CNN
+	1    5820 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP9
+U 1 1 589859DC
+P 6220 5600
+F 0 "JP9" H 6220 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6230 5540 50  0001 C CNN
+F 2 "" H 6220 5600 60  0000 C CNN
+F 3 "" H 6220 5600 60  0000 C CNN
+	1    6220 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP10
+U 1 1 589859E3
+P 6220 5715
+F 0 "JP10" H 6220 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6230 5655 50  0001 C CNN
+F 2 "" H 6220 5715 60  0000 C CNN
+F 3 "" H 6220 5715 60  0000 C CNN
+	1    6220 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 589859EA
+P 6375 5030
+F 0 "#PWR019" H 6375 4780 50  0001 C CNN
+F 1 "GND" H 6375 4880 50  0000 C CNN
+F 2 "" H 6375 5030 60  0000 C CNN
+F 3 "" H 6375 5030 60  0000 C CNN
+	1    6375 5030
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB_A P4
+U 1 1 589859F0
+P 8060 5130
+F 0 "P4" H 8270 5150 50  0000 C CNN
+F 1 "USB_A" H 8010 5330 50  0000 C CNN
+F 2 "" V 8010 5030 60  0000 C CNN
+F 3 "" V 8010 5030 60  0000 C CNN
+	1    8060 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 589859F7
+P 8315 5430
+F 0 "#PWR020" H 8315 5180 50  0001 C CNN
+F 1 "GND" H 8315 5280 50  0000 C CNN
+F 2 "" H 8315 5430 60  0000 C CNN
+F 3 "" H 8315 5430 60  0000 C CNN
+	1    8315 5430
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7705 5600 0    60   Input ~ 0
+NRF_SWCLK
+Text GLabel 8305 5600 2    60   Input ~ 0
+NRF_SWDIO
+Text GLabel 8305 5715 2    60   Input ~ 0
+TWI_SDA
+Text GLabel 7705 5715 0    60   Input ~ 0
+TWI_SCL
+$Comp
+L Jumper_NC_Small JP13
+U 1 1 58985A01
+P 7805 5600
+F 0 "JP13" H 7805 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7815 5540 50  0001 C CNN
+F 2 "" H 7805 5600 60  0000 C CNN
+F 3 "" H 7805 5600 60  0000 C CNN
+	1    7805 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP14
+U 1 1 58985A08
+P 7805 5715
+F 0 "JP14" H 7805 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7815 5655 50  0001 C CNN
+F 2 "" H 7805 5715 60  0000 C CNN
+F 3 "" H 7805 5715 60  0000 C CNN
+	1    7805 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP15
+U 1 1 58985A0F
+P 8205 5600
+F 0 "JP15" H 8205 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 8215 5540 50  0001 C CNN
+F 2 "" H 8205 5600 60  0000 C CNN
+F 3 "" H 8205 5600 60  0000 C CNN
+	1    8205 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP16
+U 1 1 58985A16
+P 8205 5715
+F 0 "JP16" H 8205 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 8215 5655 50  0001 C CNN
+F 2 "" H 8205 5715 60  0000 C CNN
+F 3 "" H 8205 5715 60  0000 C CNN
+	1    8205 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 58985A1D
+P 8360 5030
+F 0 "#PWR021" H 8360 4780 50  0001 C CNN
+F 1 "GND" H 8360 4880 50  0000 C CNN
+F 2 "" H 8360 5030 60  0000 C CNN
+F 3 "" H 8360 5030 60  0000 C CNN
+	1    8360 5030
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB_A P2
+U 1 1 58985A23
+P 4085 5130
+F 0 "P2" H 4295 5150 50  0000 C CNN
+F 1 "USB_A" H 4035 5330 50  0000 C CNN
+F 2 "" V 4035 5030 60  0000 C CNN
+F 3 "" V 4035 5030 60  0000 C CNN
+	1    4085 5130
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 58985A2A
+P 4340 5430
+F 0 "#PWR022" H 4340 5180 50  0001 C CNN
+F 1 "GND" H 4340 5280 50  0000 C CNN
+F 2 "" H 4340 5430 60  0000 C CNN
+F 3 "" H 4340 5430 60  0000 C CNN
+	1    4340 5430
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3730 5600 0    60   Input ~ 0
+NRF_SWCLK
+Text GLabel 4330 5600 2    60   Input ~ 0
+NRF_SWDIO
+Text GLabel 4330 5715 2    60   Input ~ 0
+GEIGER1
+Text GLabel 3730 5715 0    60   Input ~ 0
+GEIGER0
+$Comp
+L Jumper_NC_Small JP1
+U 1 1 58985A34
+P 3830 5600
+F 0 "JP1" H 3830 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3840 5540 50  0001 C CNN
+F 2 "" H 3830 5600 60  0000 C CNN
+F 3 "" H 3830 5600 60  0000 C CNN
+	1    3830 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP2
+U 1 1 58985A3B
+P 3830 5715
+F 0 "JP2" H 3830 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3840 5655 50  0001 C CNN
+F 2 "" H 3830 5715 60  0000 C CNN
+F 3 "" H 3830 5715 60  0000 C CNN
+	1    3830 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP5
+U 1 1 58985A42
+P 4230 5600
+F 0 "JP5" H 4230 5680 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4240 5540 50  0001 C CNN
+F 2 "" H 4230 5600 60  0000 C CNN
+F 3 "" H 4230 5600 60  0000 C CNN
+	1    4230 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NC_Small JP6
+U 1 1 58985A49
+P 4230 5715
+F 0 "JP6" H 4230 5645 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4240 5655 50  0001 C CNN
+F 2 "" H 4230 5715 60  0000 C CNN
+F 3 "" H 4230 5715 60  0000 C CNN
+	1    4230 5715
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 58985A50
+P 4385 5030
+F 0 "#PWR023" H 4385 4780 50  0001 C CNN
+F 1 "GND" H 4385 4880 50  0000 C CNN
+F 2 "" H 4385 5030 60  0000 C CNN
+F 3 "" H 4385 5030 60  0000 C CNN
+	1    4385 5030
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 58985A5D
+P 6690 3760
+F 0 "#PWR024" H 6690 3510 50  0001 C CNN
+F 1 "GND" H 6690 3610 50  0000 C CNN
+F 2 "" H 6690 3760 60  0000 C CNN
+F 3 "" H 6690 3760 60  0000 C CNN
+	1    6690 3760
+	-1   0    0    1   
+$EndComp
+Text GLabel 6690 3910 0    60   Input ~ 0
+ENABLE-AIR
+Wire Wire Line
+	6690 3835 6505 3835
+Wire Wire Line
+	6505 3835 6505 3760
+Text GLabel 6615 4025 0    60   Input ~ 0
+ENABLE-GEIG
+Wire Wire Line
+	6615 4025 6690 4025
+Wire Wire Line
+	6690 4025 6690 3985
+Text GLabel 7740 3910 2    60   Input ~ 0
+GEIGER_5V
+Text GLabel 7740 3795 2    60   Input ~ 0
+AIR_5V
+Wire Wire Line
+	7615 3835 7675 3835
+Wire Wire Line
+	7675 3835 7675 3795
+Wire Wire Line
+	7675 3795 7740 3795
+Wire Wire Line
+	7615 3910 7740 3910
+Wire Wire Line
+	7615 3760 7615 3680
+Wire Wire Line
+	7615 3680 7740 3680
+Wire Wire Line
+	7615 3985 7615 4025
+Wire Wire Line
+	7615 4025 7740 4025
+$Comp
+L GND #PWR025
+U 1 1 58985A8F
+P 3065 3985
+F 0 "#PWR025" H 3065 3735 50  0001 C CNN
+F 1 "GND" H 3065 3835 50  0000 C CNN
+F 2 "" H 3065 3985 60  0000 C CNN
+F 3 "" H 3065 3985 60  0000 C CNN
+	1    3065 3985
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3065 4060 2880 4060
+Wire Wire Line
+	2880 4060 2880 3985
+Wire Wire Line
+	2990 4250 3065 4250
+Wire Wire Line
+	3065 4250 3065 4210
+Wire Wire Line
+	3990 4060 4050 4060
+Wire Wire Line
+	4050 4060 4050 4020
+Wire Wire Line
+	4050 4020 4115 4020
+Wire Wire Line
+	3990 4135 4115 4135
+Wire Wire Line
+	3990 3985 3990 3905
+Wire Wire Line
+	3990 3905 4115 3905
+Wire Wire Line
+	3990 4210 3990 4250
+Wire Wire Line
+	3990 4250 4115 4250
+Text GLabel 7700 5430 0    60   Input ~ 0
+RESERV_5V
+$Comp
+L GND #PWR026
+U 1 1 58985AAE
+P 6330 5430
+F 0 "#PWR026" H 6330 5180 50  0001 C CNN
+F 1 "GND" H 6330 5280 50  0000 C CNN
+F 2 "" H 6330 5430 60  0000 C CNN
+F 3 "" H 6330 5430 60  0000 C CNN
+	1    6330 5430
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5715 5430 0    60   Input ~ 0
+AIR_5V
+Text GLabel 3725 5430 0    60   Input ~ 0
+GEIGER_5V
+$Comp
+L Jumper_NC_Small JP3
+U 1 1 58985AB6
+P 4025 3490
+F 0 "JP3" H 4025 3570 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4035 3430 50  0001 C CNN
+F 2 "" H 4025 3490 60  0000 C CNN
+F 3 "" H 4025 3490 60  0000 C CNN
+	1    4025 3490
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR027
+U 1 1 58985ABE
+P 3925 3490
+F 0 "#PWR027" H 3925 3340 50  0001 C CNN
+F 1 "+5V" H 3925 3630 50  0000 C CNN
+F 2 "" H 3925 3490 60  0000 C CNN
+F 3 "" H 3925 3490 60  0000 C CNN
+	1    3925 3490
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper_NC_Small JP11
+U 1 1 58985AD2
+P 7625 3230
+F 0 "JP11" H 7625 3310 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7635 3170 50  0001 C CNN
+F 2 "" H 7625 3230 60  0000 C CNN
+F 3 "" H 7625 3230 60  0000 C CNN
+	1    7625 3230
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR028
+U 1 1 58985AD9
+P 7525 3230
+F 0 "#PWR028" H 7525 3080 50  0001 C CNN
+F 1 "+5V" H 7525 3370 50  0000 C CNN
+F 2 "" H 7525 3230 60  0000 C CNN
+F 3 "" H 7525 3230 60  0000 C CNN
+	1    7525 3230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper_NC_Small JP12
+U 1 1 58985ADF
+P 7625 3415
+F 0 "JP12" H 7625 3495 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7635 3355 50  0001 C CNN
+F 2 "" H 7625 3415 60  0000 C CNN
+F 3 "" H 7625 3415 60  0000 C CNN
+	1    7625 3415
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR029
+U 1 1 58985AE6
+P 7525 3415
+F 0 "#PWR029" H 7525 3265 50  0001 C CNN
+F 1 "+5V" H 7525 3555 50  0000 C CNN
+F 2 "" H 7525 3415 60  0000 C CNN
+F 3 "" H 7525 3415 60  0000 C CNN
+	1    7525 3415
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7725 3415 2    60   Input ~ 0
+GEIGER_5V
+Text GLabel 4125 3490 2    60   Input ~ 0
+RESERV_5V
+Text HLabel 8200 1550 0    60   Input ~ 0
+5V
+$Comp
+L +5V #PWR030
+U 1 1 58988CC2
+P 8200 1550
+F 0 "#PWR030" H 8200 1400 50  0001 C CNN
+F 1 "+5V" H 8200 1690 50  0000 C CNN
+F 2 "" H 8200 1550 60  0000 C CNN
+F 3 "" H 8200 1550 60  0000 C CNN
+	1    8200 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR031
+U 1 1 58989B65
+P 8215 1775
+F 0 "#PWR031" H 8215 1625 50  0001 C CNN
+F 1 "+3.3V" H 8215 1915 50  0000 C CNN
+F 2 "" H 8215 1775 60  0000 C CNN
+F 3 "" H 8215 1775 60  0000 C CNN
+	1    8215 1775
+	0    1    1    0   
+$EndComp
+Text HLabel 8215 1775 0    60   Input ~ 0
+3V3
+Text HLabel 8165 2030 0    60   Input ~ 0
+VBAT
+$Comp
+L PWR_CONN U4
+U 1 1 589845BD
+P 5360 2070
+F 0 "U4" H 5035 2395 60  0000 C CNN
+F 1 "PWR_CONN" H 5360 1745 60  0000 C CNN
+F 2 "" H 5160 2470 60  0000 C CNN
+F 3 "" H 5160 2470 60  0000 C CNN
+	1    5360 2070
+	1    0    0    -1  
+$EndComp
+Text GLabel 4785 1870 0    60   Input ~ 0
+TWI_SCL
+$Comp
+L +5V #PWR032
+U 1 1 589845B4
+P 4265 1815
+F 0 "#PWR032" H 4265 1665 50  0001 C CNN
+F 1 "+5V" H 4265 1955 50  0000 C CNN
+F 2 "" H 4265 1815 60  0000 C CNN
+F 3 "" H 4265 1815 60  0000 C CNN
+	1    4265 1815
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR033
+U 1 1 589845AE
+P 4110 1975
+F 0 "#PWR033" H 4110 1825 50  0001 C CNN
+F 1 "+3.3V" H 4110 2115 50  0000 C CNN
+F 2 "" H 4110 1975 60  0000 C CNN
+F 3 "" H 4110 1975 60  0000 C CNN
+	1    4110 1975
+	1    0    0    -1  
+$EndComp
+Text GLabel 4785 2170 0    60   Input ~ 0
+VBAT
+Text GLabel 8165 2030 2    60   Input ~ 0
+VBAT
+Text GLabel 1960 1935 2    60   Input ~ 0
+ENABLE-RESERV
+Text GLabel 1960 2065 2    60   Input ~ 0
+ENABLE-BACKUP
+Text HLabel 1960 1935 0    60   Input ~ 0
+ENABLE-RESERV
+Text HLabel 1960 2065 0    60   Input ~ 0
+ENABLE-BACKUP
+Text GLabel 1960 2200 2    60   Input ~ 0
+PWR_SWITCH_OC
+Text HLabel 1960 2200 0    60   Input ~ 0
+PWR_SWITCH_OC
+Text GLabel 9340 1290 2    60   Input ~ 0
+NRF_SWDIO
+Text GLabel 9340 1700 2    60   Input ~ 0
+GEIGER1
+Text GLabel 9340 1425 2    60   Input ~ 0
+NRF_SWCLK
+Text GLabel 9340 1560 2    60   Input ~ 0
+GEIGER0
+Text GLabel 9340 1840 2    60   Input ~ 0
+TWI_SDA
+Text GLabel 9340 1975 2    60   Input ~ 0
+TWI_SCL
+Text HLabel 9340 1290 0    60   Input ~ 0
+NRF_SWDIO
+Text HLabel 9340 1425 0    60   Input ~ 0
+NRF_SWCLK
+Text HLabel 9340 1560 0    60   Input ~ 0
+GEIGER0
+Text HLabel 9340 1840 0    60   Input ~ 0
+TWI_SDA
+Text HLabel 9340 1700 0    60   Input ~ 0
+GEIGER1
+Text HLabel 9340 1975 0    60   Input ~ 0
+TWI_SCL
+Text GLabel 9700 4435 0    60   Input ~ 0
+BACKUP_5V
+$Comp
+L GND #PWR034
+U 1 1 589977EF
+P 9700 4535
+F 0 "#PWR034" H 9700 4285 50  0001 C CNN
+F 1 "GND" H 9700 4385 50  0000 C CNN
+F 2 "" H 9700 4535 60  0000 C CNN
+F 3 "" H 9700 4535 60  0000 C CNN
+	1    9700 4535
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 58997EA5
+P 9900 4485
+F 0 "P5" H 9900 4635 50  0000 C CNN
+F 1 "BACKUP" V 10000 4485 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9900 4485 60  0001 C CNN
+F 3 "" H 9900 4485 60  0000 C CNN
+	1    9900 4485
+	1    0    0    -1  
+$EndComp
+Text GLabel 7725 3230 2    60   Input ~ 0
+AIR_5V
+$Comp
+L GND #PWR035
+U 1 1 58A00F9B
+P 8195 1320
+F 0 "#PWR035" H 8195 1070 50  0001 C CNN
+F 1 "GND" H 8195 1170 50  0000 C CNN
+F 2 "" H 8195 1320 60  0000 C CNN
+F 3 "" H 8195 1320 60  0000 C CNN
+	1    8195 1320
+	0    -1   -1   0   
+$EndComp
+Text HLabel 8195 1320 0    60   Input ~ 0
+GND
+Text GLabel 1955 1805 2    60   Input ~ 0
+ENABLE-GEIG
+Text HLabel 1955 1805 0    60   Input ~ 0
+ENABLE-GEIG
+Text HLabel 1955 1670 0    60   Input ~ 0
+ENABLE-AIR
+$Comp
+L R R3
+U 1 1 58999FE2
+P 1735 2625
+F 0 "R3" V 1815 2625 50  0000 C CNN
+F 1 "10K" V 1735 2625 50  0000 C CNN
+F 2 "" V 1665 2625 30  0000 C CNN
+F 3 "" H 1735 2625 30  0000 C CNN
+	1    1735 2625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +3.3V #PWR036
+U 1 1 58999FE9
+P 1585 2625
+F 0 "#PWR036" H 1585 2475 50  0001 C CNN
+F 1 "+3.3V" H 1585 2765 50  0000 C CNN
+F 2 "" H 1585 2625 60  0000 C CNN
+F 3 "" H 1585 2625 60  0000 C CNN
+	1    1585 2625
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1885 2625 2    60   Input ~ 0
+PWR_SWITCH_OC
+Text GLabel 7740 3680 2    60   Input ~ 0
+PWR_SWITCH_OC
+Text GLabel 7740 4025 2    60   Input ~ 0
+PWR_SWITCH_OC
+$Comp
+L IDC12 J1
+U 1 1 58A15D3A
+P 2105 5475
+F 0 "J1" H 1875 5815 50  0000 C CNN
+F 1 "IDC12" H 1905 5045 50  0000 L BNN
+F 2 "IDC12_connector:IDC12_connector" H 2045 5005 50  0001 C CNN
+F 3 "" H 2105 5475 60  0000 C CNN
+	1    2105 5475
+	1    0    0    -1  
+$EndComp
+Text GLabel 2310 5575 2    60   Input ~ 0
+SPI_MOSI
+Text GLabel 1710 5575 0    60   Input ~ 0
+SPI_MISO
+Text GLabel 2310 5475 2    60   Input ~ 0
+SPI_CS
+Text GLabel 1710 5475 0    60   Input ~ 0
+SPI_SCLK
+$Comp
+L GND #PWR037
+U 1 1 58A15D45
+P 2385 5215
+F 0 "#PWR037" H 2385 4965 50  0001 C CNN
+F 1 "GND" H 2385 5065 50  0000 C CNN
+F 2 "" H 2385 5215 60  0000 C CNN
+F 3 "" H 2385 5215 60  0000 C CNN
+	1    2385 5215
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1710 5375 0    60   Input ~ 0
+TWI_SDA
+Text GLabel 2310 5375 2    60   Input ~ 0
+TWI_SCL
+Wire Wire Line
+	1905 5275 1710 5275
+Wire Wire Line
+	1905 5375 1710 5375
+Wire Wire Line
+	1905 5475 1710 5475
+Wire Wire Line
+	1905 5575 1710 5575
+Wire Wire Line
+	1905 5675 1710 5675
+Wire Wire Line
+	1905 5775 1710 5775
+Text GLabel 1710 5675 0    60   Input ~ 0
+MCU_TX
+Text GLabel 2310 5675 2    60   Input ~ 0
+MCU_RX
+Text GLabel 1710 5775 0    60   Input ~ 0
+MCU_CTS
+Text GLabel 2310 5775 2    60   Input ~ 0
+MCU_RTS
+Wire Wire Line
+	2155 5375 2310 5375
+Wire Wire Line
+	2155 5475 2310 5475
+Wire Wire Line
+	2155 5575 2310 5575
+Wire Wire Line
+	2155 5675 2310 5675
+Wire Wire Line
+	2155 5775 2310 5775
+Wire Wire Line
+	2155 5275 2290 5275
+Wire Wire Line
+	2290 5275 2290 5215
+Wire Wire Line
+	2290 5215 2385 5215
+Text GLabel 1640 5255 0    60   Input ~ 0
+AIR_5V
+Wire Wire Line
+	1640 5255 1710 5255
+Wire Wire Line
+	1710 5255 1710 5275
+Text GLabel 9730 3255 2    60   Input ~ 0
+SPI_MISO
+Text GLabel 9730 3155 2    60   Input ~ 0
+SPI_SCLK
+Text GLabel 9730 3355 2    60   Input ~ 0
+MCU_TX
+Text GLabel 9730 3455 2    60   Input ~ 0
+MCU_CTS
+Text GLabel 9730 2840 2    60   Input ~ 0
+SPI_MOSI
+Text GLabel 9730 2740 2    60   Input ~ 0
+SPI_CS
+Text GLabel 9730 2940 2    60   Input ~ 0
+MCU_RX
+Text GLabel 9730 3040 2    60   Input ~ 0
+MCU_RTS
+Text HLabel 9730 2740 0    60   Input ~ 0
+SPI_CS
+Text HLabel 9730 2840 0    60   Input ~ 0
+SPI_MOSI
+Text HLabel 9730 2940 0    60   Input ~ 0
+MCU_RX
+Text HLabel 9730 3040 0    60   Input ~ 0
+MCU_RTS
+Text HLabel 9730 3155 0    60   Input ~ 0
+SPI_SCLK
+Text HLabel 9730 3255 0    60   Input ~ 0
+SPI_MISO
+Text HLabel 9730 3355 0    60   Input ~ 0
+MCU_TX
+Text HLabel 9730 3455 0    60   Input ~ 0
+MCU_CTS
+Text GLabel 1955 1670 2    60   Input ~ 0
+ENABLE-AIR
+$Comp
+L +5V #PWR038
+U 1 1 58985A95
+P 2880 3985
+F 0 "#PWR038" H 2880 3835 50  0001 C CNN
+F 1 "+5V" H 2880 4125 50  0000 C CNN
+F 2 "" H 2880 3985 60  0000 C CNN
+F 3 "" H 2880 3985 60  0000 C CNN
+	1    2880 3985
+	1    0    0    -1  
+$EndComp
+Text GLabel 3065 4135 0    60   Input ~ 0
+ENABLE-RESERV
+Text GLabel 2990 4250 0    60   Input ~ 0
+ENABLE-BACKUP
+Text GLabel 4115 4250 2    60   Input ~ 0
+PWR_SWITCH_OC
+Text GLabel 4115 4135 2    60   Input ~ 0
+BACKUP_5V
+Text GLabel 4115 4020 2    60   Input ~ 0
+RESERV_5V
+Text GLabel 4115 3905 2    60   Input ~ 0
+PWR_SWITCH_OC
+$Comp
+L Jumper_NC_Small JP4
+U 1 1 58985AC4
+P 4025 3675
+F 0 "JP4" H 4025 3755 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4035 3615 50  0001 C CNN
+F 2 "" H 4025 3675 60  0000 C CNN
+F 3 "" H 4025 3675 60  0000 C CNN
+	1    4025 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR039
+U 1 1 58985ACB
+P 3925 3675
+F 0 "#PWR039" H 3925 3525 50  0001 C CNN
+F 1 "+5V" H 3925 3815 50  0000 C CNN
+F 2 "" H 3925 3675 60  0000 C CNN
+F 3 "" H 3925 3675 60  0000 C CNN
+	1    3925 3675
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4125 3675 2    60   Input ~ 0
+BACKUP_5V
+$Comp
+L +5V #PWR040
+U 1 1 58985A63
+P 6505 3760
+F 0 "#PWR040" H 6505 3610 50  0001 C CNN
+F 1 "+5V" H 6505 3900 50  0000 C CNN
+F 2 "" H 6505 3760 60  0000 C CNN
+F 3 "" H 6505 3760 60  0000 C CNN
+	1    6505 3760
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS2064 U5
+U 1 1 58985A56
+P 7140 3885
+F 0 "U5" H 6990 4135 60  0000 C CNN
+F 1 "TPS2064" H 7140 3660 60  0000 C CNN
+F 2 "TPS2064:TPS2064" H 7140 3585 60  0001 C CNN
+F 3 "" H 7040 3660 60  0000 C CNN
+	1    7140 3885
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS2064 U3
+U 1 1 58985A88
+P 3515 4110
+F 0 "U3" H 3365 4360 60  0000 C CNN
+F 1 "TPS2064" H 3515 3885 60  0000 C CNN
+F 2 "TPS2064:TPS2064" H 3515 3810 60  0001 C CNN
+F 3 "" H 3415 3885 60  0000 C CNN
+	1    3515 4110
+	1    0    0    -1  
+$EndComp
+Text GLabel 5935 1970 2    60   Input ~ 0
+ENABLE-5V
+Text GLabel 5935 2070 2    60   Input ~ 0
+ENABLE-3V3
+Text GLabel 5935 2170 2    60   Input ~ 0
+ENABLE-VBAT
+Text GLabel 1945 1290 2    60   Input ~ 0
+ENABLE-5V
+Text GLabel 1945 1415 2    60   Input ~ 0
+ENABLE-3V3
+Text GLabel 1950 1535 2    60   Input ~ 0
+ENABLE-VBAT
+Text HLabel 1950 1535 0    60   Input ~ 0
+ENABLE-VBAT
+Text HLabel 1945 1415 0    60   Input ~ 0
+ENABLE-3V3
+Text HLabel 1945 1290 0    60   Input ~ 0
+ENABLE-5V
+$EndSCHEMATC

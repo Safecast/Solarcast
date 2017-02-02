@@ -1,4 +1,4 @@
-update=25.1.2017 19:42:50
+update=2.2.2017 17:58:48
 version=1
 last_client=kicad
 [pcbnew]
@@ -75,7 +75,7 @@ LibName43=arm_swd_small
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../../../Solarcast/air-module/
+PlotDirectoryName=../
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
