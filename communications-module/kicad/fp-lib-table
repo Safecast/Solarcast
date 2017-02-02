@@ -23,4 +23,5 @@
   (lib (name TPS79133)(type KiCad)(uri "$(KIPRJMOD)\\TPS79133.pretty")(options "")(descr ""))
   (lib (name OPENHARDWARE)(type Legacy)(uri "$(KIPRJMOD)\\OPENHARDWARE.mod")(options "")(descr ""))
   (lib (name RaspberryPi)(type KiCad)(uri "$(KIPRJMOD)\\RaspberryPi.pretty")(options "")(descr ""))
+  (lib (name USB_A_receptacle)(type KiCad)(uri "$(KIPRJMOD)\\USB_A_receptacle.pretty")(options "")(descr ""))
 )
