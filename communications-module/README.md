@@ -18,8 +18,7 @@ Communications module operates as the main module for the complete Solarcast ass
  * USB0 - data pins select between I2C and programming pins
  * USB1 - data pins select between I2C and programming pins
  * USB2 - data pins select between GEIGER0/GEIGER1 and programming pins
-* Connector for power module - 4 pin (5V,Vbat-in,Vbat-out,GND)
-  * Jumpers for selecting current measurement either between Vbat-in,Vbat-out or between 5V in load on the board
+* Connector for power module
 * 2 groove expansion ports
 * External power switch mounted on the box.
 
@@ -27,10 +26,7 @@ Communications module operates as the main module for the complete Solarcast ass
 ## Power supply configuration
 Solar operation of the device and minimal power consumption in the standby state govern the design requirements.
 
-Power flow: Solar cell-> Power module (5v OUT) -> Comms module -> Power switch and fan out to:
-* Regulator 3.3V - for core - always on  - 50mA peak [LXDC2UR33A-122] - power directly from battery
-* Regulator 3.3V - for non-core - ENABLE-TWI  - 250mA peak [LXDC2UR33A-122] - power from 5V step down regulator
-* Regulator 4.1V - for GSM module - ENABLE-CELL - 2A peak - [LXDC55KAAA-205](http://power.murata.com/en/lxdc55kaaa-205.html) - possibly do direct power from battery without regulator
+Power flow: Solar cell-> Power module (built-in regulators) -> Comms module -> Power switch and fan out to:
 * Switch high-side 5V - USB0 for Air module - ENABLE-AIR - 250mA peak - [TPS2034D](http://www.ti.com/product/TPS2034D?keyMatch=TPS2034D&tisearch=Search-EN-Everything) regulated from battery pack
 * Switch high-side 5V - USB1 for Geiger module - ENABLE-GEIG - 50mA peak - [TPS2034D](http://www.ti.com/product/TPS2034D?keyMatch=TPS2034D&tisearch=Search-EN-Everything) regulated from battery pack
 * Switch high-side 5V - USB2 -reserve- 1A peak [TPS2034D](http://www.ti.com/product/TPS2034D?keyMatch=TPS2034D&tisearch=Search-EN-Everything)
