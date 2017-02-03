@@ -88,9 +88,9 @@ F 3 "" H 2170 1300 60  0000 C CNN
 	1    2170 1300
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1850 1645 2    60   Input ~ 0
-FONA_RX
 Text GLabel 1850 1745 2    60   Input ~ 0
+FONA_RX
+Text GLabel 1850 1645 2    60   Input ~ 0
 FONA_TX
 NoConn ~ 1850 2545
 NoConn ~ 1850 2645
@@ -301,9 +301,9 @@ Text GLabel 5870 6020 2    60   Input ~ 0
 FONA_RTS
 Text GLabel 4870 6220 0    60   Input ~ 0
 FONA_CTS
-Text GLabel 1850 1845 2    60   Input ~ 0
-FONA_RTS
 Text GLabel 1850 2045 2    60   Input ~ 0
+FONA_RTS
+Text GLabel 1850 1845 2    60   Input ~ 0
 FONA_CTS
 NoConn ~ 4870 5820
 NoConn ~ 5870 6220
@@ -318,13 +318,13 @@ F 3 "" H 3895 2785 60  0000 C CNN
 	1    3895 2785
 	1    0    0    -1  
 $EndComp
-Text GLabel 3895 1685 2    60   Input ~ 0
-ROCK_TX
 Text GLabel 3895 1585 2    60   Input ~ 0
+ROCK_TX
+Text GLabel 3895 1685 2    60   Input ~ 0
 ROCK_RX
 Text GLabel 3895 1485 2    60   Input ~ 0
 ROCK_RTS
-Text GLabel 3895 1885 2    60   Input ~ 0
+Text GLabel 4540 1330 2    60   Input ~ 0
 ROCK_CTS
 $Comp
 L GND #PWR072
@@ -873,11 +873,8 @@ F 3 "" H 2070 2195 60  0000 C CNN
 	1    2070 2195
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1850 1945 2    60   Input ~ 0
-FONA_DTR
 Text GLabel 3895 1785 2    60   Input ~ 0
 ROCK_5V
-NoConn ~ 3895 2585
 $Comp
 L +3.3V #PWR096
 U 1 1 58A799CC
@@ -1108,4 +1105,18 @@ Wire Wire Line
 	2740 4415 2865 4415
 Text GLabel 2865 4415 2    60   Input ~ 0
 FONA_VBAT
+$Comp
+L R R?
+U 1 1 5894C116
+P 4045 2585
+F 0 "R?" V 4125 2585 50  0000 C CNN
+F 1 "10K" V 4045 2585 50  0000 C CNN
+F 2 "0603_handsolder:0603_HandSoldering" V 3975 2585 30  0001 C CNN
+F 3 "" H 4045 2585 30  0000 C CNN
+	1    4045 2585
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4195 2585 2    60   Input ~ 0
+ENABLE-ROCK
+NoConn ~ 1850 1945
 $EndSCHEMATC
