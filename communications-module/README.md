@@ -4,7 +4,6 @@ Communications module operates as the main module for the complete Solarcast ass
 ## Design specification
 * NRF module [nRF52832 ANT](https://www.tindie.com/products/hnhoan/nrf52832-ant-bluetooth-le-arm-cortex-m4f-30-io/)
 * Programmer [CMSIS-DAP](https://www.tindie.com/products/hnhoan/cmsis-dap-arm-debug-jtagswd-module-drag-and-drop/)
-* INA219 sensor on the board
 * [GPS module](https://www.adafruit.com/products/790)
 * [Adafruit FONA 3G module](https://www.adafruit.com/products/2691) (Note version difference between USA and EU)
 * GSM antenna [FXUB66.07.0150C](http://www.mouser.com/ProductDetail/Taoglas/FXUB66070150C/?qs=L8NdhHdZHXxzH3hw8Na69A%3D%3D)
