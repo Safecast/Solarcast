@@ -25,4 +25,6 @@
   (lib (name RaspberryPi)(type KiCad)(uri "$(KIPRJMOD)\\RaspberryPi.pretty")(options "")(descr ""))
   (lib (name USB_A_receptacle)(type KiCad)(uri "$(KIPRJMOD)\\USB_A_receptacle.pretty")(options "")(descr ""))
   (lib (name RockBlock)(type KiCad)(uri "$(KIPRJMOD)\\RockBlock.pretty")(options "")(descr ""))
+  (lib (name Solarcast_Gateway_Module)(type KiCad)(uri "$(KIPRJMOD)\\Solarcast_Gateway_Module.pretty")(options "")(descr ""))
+  (lib (name IDC10_connector)(type KiCad)(uri "$(KIPRJMOD)\\IDC10_connector.pretty")(options "")(descr ""))
 )

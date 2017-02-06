@@ -175,7 +175,7 @@ U 1 1 589859CE
 P 5820 5600
 F 0 "JP7" H 5820 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 5830 5540 50  0001 C CNN
-F 2 "" H 5820 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5820 5600 60  0001 C CNN
 F 3 "" H 5820 5600 60  0000 C CNN
 	1    5820 5600
 	1    0    0    -1  
@@ -186,7 +186,7 @@ U 1 1 589859D5
 P 5820 5715
 F 0 "JP8" H 5820 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 5830 5655 50  0001 C CNN
-F 2 "" H 5820 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5820 5715 60  0001 C CNN
 F 3 "" H 5820 5715 60  0000 C CNN
 	1    5820 5715
 	1    0    0    -1  
@@ -197,7 +197,7 @@ U 1 1 589859DC
 P 6220 5600
 F 0 "JP9" H 6220 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 6230 5540 50  0001 C CNN
-F 2 "" H 6220 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6220 5600 60  0001 C CNN
 F 3 "" H 6220 5600 60  0000 C CNN
 	1    6220 5600
 	1    0    0    -1  
@@ -208,7 +208,7 @@ U 1 1 589859E3
 P 6220 5715
 F 0 "JP10" H 6220 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 6230 5655 50  0001 C CNN
-F 2 "" H 6220 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6220 5715 60  0001 C CNN
 F 3 "" H 6220 5715 60  0000 C CNN
 	1    6220 5715
 	1    0    0    -1  
@@ -260,7 +260,7 @@ U 1 1 58985A01
 P 7805 5600
 F 0 "JP13" H 7805 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7815 5540 50  0001 C CNN
-F 2 "" H 7805 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7805 5600 60  0001 C CNN
 F 3 "" H 7805 5600 60  0000 C CNN
 	1    7805 5600
 	1    0    0    -1  
@@ -271,7 +271,7 @@ U 1 1 58985A08
 P 7805 5715
 F 0 "JP14" H 7805 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 7815 5655 50  0001 C CNN
-F 2 "" H 7805 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7805 5715 60  0001 C CNN
 F 3 "" H 7805 5715 60  0000 C CNN
 	1    7805 5715
 	1    0    0    -1  
@@ -282,7 +282,7 @@ U 1 1 58985A0F
 P 8205 5600
 F 0 "JP15" H 8205 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 8215 5540 50  0001 C CNN
-F 2 "" H 8205 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8205 5600 60  0001 C CNN
 F 3 "" H 8205 5600 60  0000 C CNN
 	1    8205 5600
 	1    0    0    -1  
@@ -293,7 +293,7 @@ U 1 1 58985A16
 P 8205 5715
 F 0 "JP16" H 8205 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 8215 5655 50  0001 C CNN
-F 2 "" H 8205 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8205 5715 60  0001 C CNN
 F 3 "" H 8205 5715 60  0000 C CNN
 	1    8205 5715
 	1    0    0    -1  
@@ -345,7 +345,7 @@ U 1 1 58985A34
 P 3830 5600
 F 0 "JP1" H 3830 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 3840 5540 50  0001 C CNN
-F 2 "" H 3830 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3830 5600 60  0001 C CNN
 F 3 "" H 3830 5600 60  0000 C CNN
 	1    3830 5600
 	1    0    0    -1  
@@ -356,7 +356,7 @@ U 1 1 58985A3B
 P 3830 5715
 F 0 "JP2" H 3830 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 3840 5655 50  0001 C CNN
-F 2 "" H 3830 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3830 5715 60  0001 C CNN
 F 3 "" H 3830 5715 60  0000 C CNN
 	1    3830 5715
 	1    0    0    -1  
@@ -367,7 +367,7 @@ U 1 1 58985A42
 P 4230 5600
 F 0 "JP5" H 4230 5680 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 4240 5540 50  0001 C CNN
-F 2 "" H 4230 5600 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4230 5600 60  0001 C CNN
 F 3 "" H 4230 5600 60  0000 C CNN
 	1    4230 5600
 	1    0    0    -1  
@@ -378,7 +378,7 @@ U 1 1 58985A49
 P 4230 5715
 F 0 "JP6" H 4230 5645 50  0000 C CNN
 F 1 "Jumper_NC_Small" H 4240 5655 50  0001 C CNN
-F 2 "" H 4230 5715 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4230 5715 60  0001 C CNN
 F 3 "" H 4230 5715 60  0000 C CNN
 	1    4230 5715
 	1    0    0    -1  

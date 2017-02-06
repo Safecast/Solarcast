@@ -513,7 +513,7 @@ U 1 1 589EFCB5
 P 9405 2080
 F 0 "U19" H 9445 3295 60  0000 C CNN
 F 1 "Gateway Module LORA" H 9450 3195 60  0000 C CNN
-F 2 "" H 9405 1030 60  0001 C CNN
+F 2 "Solarcast_Gateway_Module:Solarcast_Gateway_Module" H 9405 1030 60  0001 C CNN
 F 3 "" H 9405 2080 60  0000 C CNN
 	1    9405 2080
 	1    0    0    -1  
