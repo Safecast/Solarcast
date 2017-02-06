@@ -574,7 +574,6 @@ Text GLabel 4770 5820 2    60   Input ~ 0
 ENABLE-3V3
 Text GLabel 4770 4720 2    60   Input ~ 0
 ENABLE-VBAT
-NoConn ~ 2120 5620
 NoConn ~ 2120 5720
 NoConn ~ 7240 4545
 Text GLabel 8335 810  0    60   Input ~ 0
@@ -890,4 +889,6 @@ F 3 "" H 10595 2200 60  0000 C CNN
 	1    10595 2200
 	0    1    1    0   
 $EndComp
+Text GLabel 2120 5620 0    60   Input ~ 0
+PWR_SWITCH_OC
 $EndSCHEMATC

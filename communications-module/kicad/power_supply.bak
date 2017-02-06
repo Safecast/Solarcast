@@ -97,131 +97,55 @@ F 3 "" H 5935 2270 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5975 5430 5975 5715
-Connection ~ 5975 5600
+	5850 5430 5850 5810
 Wire Wire Line
-	6075 5430 6075 5715
+	5950 5430 5950 5810
 Wire Wire Line
-	6075 5715 6120 5715
+	6050 5430 6205 5430
 Wire Wire Line
-	6120 5600 6075 5600
-Connection ~ 6075 5600
+	5750 5430 5590 5430
 Wire Wire Line
-	5975 5715 5920 5715
+	7960 5430 7960 5825
 Wire Wire Line
-	5920 5600 5975 5600
-Wire Wire Line
-	6175 5430 6330 5430
-Wire Wire Line
-	5875 5430 5715 5430
-Wire Wire Line
-	7960 5430 7960 5715
-Connection ~ 7960 5600
-Wire Wire Line
-	8060 5430 8060 5715
-Wire Wire Line
-	8060 5715 8105 5715
-Wire Wire Line
-	8105 5600 8060 5600
-Connection ~ 8060 5600
-Wire Wire Line
-	7960 5715 7905 5715
-Wire Wire Line
-	7905 5600 7960 5600
+	8060 5430 8060 5825
 Wire Wire Line
 	8160 5430 8315 5430
 Wire Wire Line
 	7860 5430 7700 5430
 Wire Wire Line
-	3985 5430 3985 5715
-Connection ~ 3985 5600
+	3805 5560 3805 5945
 Wire Wire Line
-	4085 5430 4085 5715
+	3905 5560 4060 5560
 Wire Wire Line
-	4085 5715 4130 5715
-Wire Wire Line
-	4130 5600 4085 5600
-Connection ~ 4085 5600
-Wire Wire Line
-	3985 5715 3930 5715
-Wire Wire Line
-	3930 5600 3985 5600
-Wire Wire Line
-	4185 5430 4340 5430
-Wire Wire Line
-	3885 5430 3725 5430
+	3605 5560 3445 5560
 $Comp
 L USB_A P3
 U 1 1 589859C3
-P 6075 5130
-F 0 "P3" H 6285 5150 50  0000 C CNN
-F 1 "USB_A" H 6025 5330 50  0000 C CNN
-F 2 "USB_A_receptacle:USB_A_receptacle" V 6025 5030 60  0001 C CNN
-F 3 "" V 6025 5030 60  0000 C CNN
-	1    6075 5130
+P 5950 5130
+F 0 "P3" H 6160 5150 50  0000 C CNN
+F 1 "USB_A" H 5900 5330 50  0000 C CNN
+F 2 "USB_A_receptacle:USB_A_receptacle" V 5900 5030 60  0001 C CNN
+F 3 "" V 5900 5030 60  0000 C CNN
+	1    5950 5130
 	1    0    0    -1  
 $EndComp
-Text GLabel 5720 5600 0    60   Input ~ 0
+Text GLabel 5595 5560 0    60   Input ~ 0
 NRF_SWCLK
-Text GLabel 6320 5600 2    60   Input ~ 0
+Text GLabel 6195 5560 2    60   Input ~ 0
 NRF_SWDIO
-Text GLabel 6320 5715 2    60   Input ~ 0
+Text GLabel 6195 6060 2    60   Input ~ 0
 TWI_SDA
-Text GLabel 5720 5715 0    60   Input ~ 0
+Text GLabel 5595 6060 0    60   Input ~ 0
 TWI_SCL
-$Comp
-L Jumper_NC_Small JP7
-U 1 1 589859CE
-P 5820 5600
-F 0 "JP7" H 5820 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 5830 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5820 5600 60  0001 C CNN
-F 3 "" H 5820 5600 60  0000 C CNN
-	1    5820 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP8
-U 1 1 589859D5
-P 5820 5715
-F 0 "JP8" H 5820 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 5830 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 5820 5715 60  0001 C CNN
-F 3 "" H 5820 5715 60  0000 C CNN
-	1    5820 5715
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP9
-U 1 1 589859DC
-P 6220 5600
-F 0 "JP9" H 6220 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 6230 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6220 5600 60  0001 C CNN
-F 3 "" H 6220 5600 60  0000 C CNN
-	1    6220 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP10
-U 1 1 589859E3
-P 6220 5715
-F 0 "JP10" H 6220 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 6230 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 6220 5715 60  0001 C CNN
-F 3 "" H 6220 5715 60  0000 C CNN
-	1    6220 5715
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR043
 U 1 1 589859EA
-P 6375 5030
-F 0 "#PWR043" H 6375 4780 50  0001 C CNN
-F 1 "GND" H 6375 4880 50  0000 C CNN
-F 2 "" H 6375 5030 60  0000 C CNN
-F 3 "" H 6375 5030 60  0000 C CNN
-	1    6375 5030
+P 6250 5030
+F 0 "#PWR043" H 6250 4780 50  0001 C CNN
+F 1 "GND" H 6250 4880 50  0000 C CNN
+F 2 "" H 6250 5030 60  0000 C CNN
+F 3 "" H 6250 5030 60  0000 C CNN
+	1    6250 5030
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -246,58 +170,14 @@ F 3 "" H 8315 5430 60  0000 C CNN
 	1    8315 5430
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7705 5600 0    60   Input ~ 0
+Text GLabel 7705 5575 0    60   Input ~ 0
 NRF_SWCLK
-Text GLabel 8305 5600 2    60   Input ~ 0
+Text GLabel 8335 5575 2    60   Input ~ 0
 NRF_SWDIO
-Text GLabel 8305 5715 2    60   Input ~ 0
+Text GLabel 8335 6075 2    60   Input ~ 0
 TWI_SDA
-Text GLabel 7705 5715 0    60   Input ~ 0
+Text GLabel 7705 6075 0    60   Input ~ 0
 TWI_SCL
-$Comp
-L Jumper_NC_Small JP13
-U 1 1 58985A01
-P 7805 5600
-F 0 "JP13" H 7805 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7815 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7805 5600 60  0001 C CNN
-F 3 "" H 7805 5600 60  0000 C CNN
-	1    7805 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP14
-U 1 1 58985A08
-P 7805 5715
-F 0 "JP14" H 7805 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7815 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7805 5715 60  0001 C CNN
-F 3 "" H 7805 5715 60  0000 C CNN
-	1    7805 5715
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP15
-U 1 1 58985A0F
-P 8205 5600
-F 0 "JP15" H 8205 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 8215 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8205 5600 60  0001 C CNN
-F 3 "" H 8205 5600 60  0000 C CNN
-	1    8205 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP16
-U 1 1 58985A16
-P 8205 5715
-F 0 "JP16" H 8205 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 8215 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8205 5715 60  0001 C CNN
-F 3 "" H 8205 5715 60  0000 C CNN
-	1    8205 5715
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR045
 U 1 1 58985A1D
@@ -312,86 +192,42 @@ $EndComp
 $Comp
 L USB_A P2
 U 1 1 58985A23
-P 4085 5130
-F 0 "P2" H 4295 5150 50  0000 C CNN
-F 1 "USB_A" H 4035 5330 50  0000 C CNN
-F 2 "USB_A_receptacle:USB_A_receptacle" V 4035 5030 60  0001 C CNN
-F 3 "" V 4035 5030 60  0000 C CNN
-	1    4085 5130
+P 3805 5260
+F 0 "P2" H 4015 5280 50  0000 C CNN
+F 1 "USB_A" H 3755 5460 50  0000 C CNN
+F 2 "USB_A_receptacle:USB_A_receptacle" V 3755 5160 60  0001 C CNN
+F 3 "" V 3755 5160 60  0000 C CNN
+	1    3805 5260
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR046
 U 1 1 58985A2A
-P 4340 5430
-F 0 "#PWR046" H 4340 5180 50  0001 C CNN
-F 1 "GND" H 4340 5280 50  0000 C CNN
-F 2 "" H 4340 5430 60  0000 C CNN
-F 3 "" H 4340 5430 60  0000 C CNN
-	1    4340 5430
+P 4060 5560
+F 0 "#PWR046" H 4060 5310 50  0001 C CNN
+F 1 "GND" H 4060 5410 50  0000 C CNN
+F 2 "" H 4060 5560 60  0000 C CNN
+F 3 "" H 4060 5560 60  0000 C CNN
+	1    4060 5560
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3730 5600 0    60   Input ~ 0
+Text GLabel 3450 5695 0    60   Input ~ 0
 NRF_SWCLK
-Text GLabel 4330 5600 2    60   Input ~ 0
+Text GLabel 4050 5695 2    60   Input ~ 0
 NRF_SWDIO
-Text GLabel 4330 5715 2    60   Input ~ 0
+Text GLabel 4050 6195 2    60   Input ~ 0
 GEIGER1
-Text GLabel 3730 5715 0    60   Input ~ 0
+Text GLabel 3450 6195 0    60   Input ~ 0
 GEIGER0
-$Comp
-L Jumper_NC_Small JP1
-U 1 1 58985A34
-P 3830 5600
-F 0 "JP1" H 3830 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3840 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3830 5600 60  0001 C CNN
-F 3 "" H 3830 5600 60  0000 C CNN
-	1    3830 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP2
-U 1 1 58985A3B
-P 3830 5715
-F 0 "JP2" H 3830 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 3840 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 3830 5715 60  0001 C CNN
-F 3 "" H 3830 5715 60  0000 C CNN
-	1    3830 5715
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP5
-U 1 1 58985A42
-P 4230 5600
-F 0 "JP5" H 4230 5680 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4240 5540 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4230 5600 60  0001 C CNN
-F 3 "" H 4230 5600 60  0000 C CNN
-	1    4230 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NC_Small JP6
-U 1 1 58985A49
-P 4230 5715
-F 0 "JP6" H 4230 5645 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4240 5655 50  0001 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 4230 5715 60  0001 C CNN
-F 3 "" H 4230 5715 60  0000 C CNN
-	1    4230 5715
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR047
 U 1 1 58985A50
-P 4385 5030
-F 0 "#PWR047" H 4385 4780 50  0001 C CNN
-F 1 "GND" H 4385 4880 50  0000 C CNN
-F 2 "" H 4385 5030 60  0000 C CNN
-F 3 "" H 4385 5030 60  0000 C CNN
-	1    4385 5030
+P 4105 5160
+F 0 "#PWR047" H 4105 4910 50  0001 C CNN
+F 1 "GND" H 4105 5010 50  0000 C CNN
+F 2 "" H 4105 5160 60  0000 C CNN
+F 3 "" H 4105 5160 60  0000 C CNN
+	1    4105 5160
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -477,17 +313,17 @@ RESERV_5V
 $Comp
 L GND #PWR050
 U 1 1 58985AAE
-P 6330 5430
-F 0 "#PWR050" H 6330 5180 50  0001 C CNN
-F 1 "GND" H 6330 5280 50  0000 C CNN
-F 2 "" H 6330 5430 60  0000 C CNN
-F 3 "" H 6330 5430 60  0000 C CNN
-	1    6330 5430
+P 6205 5430
+F 0 "#PWR050" H 6205 5180 50  0001 C CNN
+F 1 "GND" H 6205 5280 50  0000 C CNN
+F 2 "" H 6205 5430 60  0000 C CNN
+F 3 "" H 6205 5430 60  0000 C CNN
+	1    6205 5430
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5715 5430 0    60   Input ~ 0
+Text GLabel 5590 5430 0    60   Input ~ 0
 AIR_5V
-Text GLabel 3725 5430 0    60   Input ~ 0
+Text GLabel 3445 5560 0    60   Input ~ 0
 GEIGER_5V
 $Comp
 L Jumper_NC_Small JP3
@@ -593,7 +429,7 @@ U 1 1 589845BD
 P 5360 2070
 F 0 "U4" H 5035 2395 60  0000 C CNN
 F 1 "PWR_CONN" H 5360 1745 60  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x05_Pitch2.54mm" H 5160 2470 60  0001 C CNN
+F 2 "IDC10_connector:IDC10_connector" H 5160 2470 60  0001 C CNN
 F 3 "" H 5160 2470 60  0000 C CNN
 	1    5360 2070
 	1    0    0    -1  
@@ -662,28 +498,28 @@ Text HLabel 9340 1700 0    60   Input ~ 0
 GEIGER1
 Text HLabel 9340 1975 0    60   Input ~ 0
 TWI_SCL
-Text GLabel 9700 4435 0    60   Input ~ 0
+Text GLabel 10130 4335 0    60   Input ~ 0
 BACKUP_5V
 $Comp
 L GND #PWR058
 U 1 1 589977EF
-P 9700 4535
-F 0 "#PWR058" H 9700 4285 50  0001 C CNN
-F 1 "GND" H 9700 4385 50  0000 C CNN
-F 2 "" H 9700 4535 60  0000 C CNN
-F 3 "" H 9700 4535 60  0000 C CNN
-	1    9700 4535
+P 10130 4435
+F 0 "#PWR058" H 10130 4185 50  0001 C CNN
+F 1 "GND" H 10130 4285 50  0000 C CNN
+F 2 "" H 10130 4435 60  0000 C CNN
+F 3 "" H 10130 4435 60  0000 C CNN
+	1    10130 4435
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P5
 U 1 1 58997EA5
-P 9900 4485
-F 0 "P5" H 9900 4635 50  0000 C CNN
-F 1 "BACKUP" V 10000 4485 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 9900 4485 60  0001 C CNN
-F 3 "" H 9900 4485 60  0000 C CNN
-	1    9900 4485
+P 10330 4385
+F 0 "P5" H 10330 4535 50  0000 C CNN
+F 1 "BACKUP" V 10430 4385 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 10330 4385 60  0001 C CNN
+F 3 "" H 10330 4385 60  0000 C CNN
+	1    10330 4385
 	1    0    0    -1  
 $EndComp
 Text GLabel 7725 3230 2    60   Input ~ 0
@@ -738,79 +574,79 @@ PWR_SWITCH_OC
 $Comp
 L IDC12 J1
 U 1 1 58A15D3A
-P 2105 5475
-F 0 "J1" H 1875 5815 50  0000 C CNN
-F 1 "IDC12" H 1905 5045 50  0000 L BNN
-F 2 "IDC12_connector:IDC12_connector" H 2045 5005 50  0001 C CNN
-F 3 "" H 2105 5475 60  0000 C CNN
-	1    2105 5475
+P 1740 5445
+F 0 "J1" H 1510 5785 50  0000 C CNN
+F 1 "IDC12" H 1540 5015 50  0000 L BNN
+F 2 "IDC12_connector:IDC12_connector" H 1680 4975 50  0001 C CNN
+F 3 "" H 1740 5445 60  0000 C CNN
+	1    1740 5445
 	1    0    0    -1  
 $EndComp
-Text GLabel 2310 5575 2    60   Input ~ 0
+Text GLabel 1945 5545 2    60   Input ~ 0
 SPI_MOSI
-Text GLabel 1710 5575 0    60   Input ~ 0
+Text GLabel 1345 5545 0    60   Input ~ 0
 SPI_MISO
-Text GLabel 2310 5475 2    60   Input ~ 0
+Text GLabel 1945 5445 2    60   Input ~ 0
 SPI_CS
-Text GLabel 1710 5475 0    60   Input ~ 0
+Text GLabel 1345 5445 0    60   Input ~ 0
 SPI_SCLK
 $Comp
 L GND #PWR061
 U 1 1 58A15D45
-P 2385 5215
-F 0 "#PWR061" H 2385 4965 50  0001 C CNN
-F 1 "GND" H 2385 5065 50  0000 C CNN
-F 2 "" H 2385 5215 60  0000 C CNN
-F 3 "" H 2385 5215 60  0000 C CNN
-	1    2385 5215
+P 2020 5185
+F 0 "#PWR061" H 2020 4935 50  0001 C CNN
+F 1 "GND" H 2020 5035 50  0000 C CNN
+F 2 "" H 2020 5185 60  0000 C CNN
+F 3 "" H 2020 5185 60  0000 C CNN
+	1    2020 5185
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1710 5375 0    60   Input ~ 0
+Text GLabel 1345 5345 0    60   Input ~ 0
 TWI_SDA
-Text GLabel 2310 5375 2    60   Input ~ 0
+Text GLabel 1945 5345 2    60   Input ~ 0
 TWI_SCL
 Wire Wire Line
-	1905 5275 1710 5275
+	1540 5245 1345 5245
 Wire Wire Line
-	1905 5375 1710 5375
+	1540 5345 1345 5345
 Wire Wire Line
-	1905 5475 1710 5475
+	1540 5445 1345 5445
 Wire Wire Line
-	1905 5575 1710 5575
+	1540 5545 1345 5545
 Wire Wire Line
-	1905 5675 1710 5675
+	1540 5645 1345 5645
 Wire Wire Line
-	1905 5775 1710 5775
-Text GLabel 1710 5675 0    60   Input ~ 0
+	1540 5745 1345 5745
+Text GLabel 1345 5645 0    60   Input ~ 0
 UART_TX
-Text GLabel 2310 5675 2    60   Input ~ 0
+Text GLabel 1945 5645 2    60   Input ~ 0
 UART_RX
-Text GLabel 1710 5775 0    60   Input ~ 0
+Text GLabel 1345 5745 0    60   Input ~ 0
 UART_CTS
-Text GLabel 2310 5775 2    60   Input ~ 0
+Text GLabel 1945 5745 2    60   Input ~ 0
 UART_RTS
 Wire Wire Line
-	2155 5375 2310 5375
+	1790 5345 1945 5345
 Wire Wire Line
-	2155 5475 2310 5475
+	1790 5445 1945 5445
 Wire Wire Line
-	2155 5575 2310 5575
+	1790 5545 1945 5545
 Wire Wire Line
-	2155 5675 2310 5675
+	1790 5645 1945 5645
 Wire Wire Line
-	2155 5775 2310 5775
+	1790 5745 1945 5745
 Wire Wire Line
-	2155 5275 2290 5275
+	1790 5245 1925 5245
 Wire Wire Line
-	2290 5275 2290 5215
+	1925 5245 1925 5185
 Wire Wire Line
-	2290 5215 2385 5215
-Text GLabel 1640 5255 0    60   Input ~ 0
+	1925 5185 2020 5185
+Text GLabel 1275 5225 0    60   Input ~ 0
 AIR_5V
 Wire Wire Line
-	1640 5255 1710 5255
+	1275 5225 1345 5225
 Wire Wire Line
-	1710 5255 1710 5275
+	1345 5225 1345 5245
 Text GLabel 9730 3255 2    60   Input ~ 0
 SPI_MISO
 Text GLabel 9730 3155 2    60   Input ~ 0
@@ -943,8 +779,6 @@ Text HLabel 1945 1415 0    60   Input ~ 0
 ENABLE-3V3
 Text HLabel 1945 1290 0    60   Input ~ 0
 ENABLE-5V
-Text Notes 5200 1695 0    118  ~ 0
-footprint ?
 Text GLabel 1335 7385 0    60   Input ~ 0
 GEIGER_5V
 Text GLabel 2200 7390 0    60   Input ~ 0
@@ -984,4 +818,108 @@ F 3 "" H 3220 7405 60  0000 C CNN
 	1    3220 7405
 	0    1    1    0   
 $EndComp
+$Comp
+L JUMPER3 JP1
+U 1 1 5898918F
+P 3555 5945
+F 0 "JP1" V 3555 6045 50  0000 L CNN
+F 1 "JUMPER3" H 3555 6045 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 3555 5945 60  0001 C CNN
+F 3 "" H 3555 5945 60  0000 C CNN
+	1    3555 5945
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3555 5695 3450 5695
+Wire Wire Line
+	3555 6195 3450 6195
+Wire Wire Line
+	3705 5560 3705 5945
+Wire Wire Line
+	3705 5945 3655 5945
+$Comp
+L JUMPER3 JP2
+U 1 1 5898BEC7
+P 3960 5945
+F 0 "JP2" V 3960 6045 50  0000 L CNN
+F 1 "JUMPER3" H 3960 6045 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 3960 5945 60  0001 C CNN
+F 3 "" H 3960 5945 60  0000 C CNN
+	1    3960 5945
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3805 5945 3860 5945
+Wire Wire Line
+	3960 5695 4050 5695
+Wire Wire Line
+	3960 6195 4050 6195
+$Comp
+L JUMPER3 JP5
+U 1 1 5898DFB0
+P 5715 5810
+F 0 "JP5" V 5715 5910 50  0000 L CNN
+F 1 "JUMPER3" H 5715 5910 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 5715 5810 60  0001 C CNN
+F 3 "" H 5715 5810 60  0000 C CNN
+	1    5715 5810
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5595 5560 5715 5560
+Wire Wire Line
+	5850 5810 5815 5810
+Wire Wire Line
+	5715 6060 5595 6060
+$Comp
+L JUMPER3 JP6
+U 1 1 589901F6
+P 6085 5810
+F 0 "JP6" V 6085 5910 50  0000 L CNN
+F 1 "JUMPER3" H 6085 5910 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 6085 5810 60  0001 C CNN
+F 3 "" H 6085 5810 60  0000 C CNN
+	1    6085 5810
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 5810 5985 5810
+Wire Wire Line
+	6085 5560 6195 5560
+Wire Wire Line
+	6085 6060 6195 6060
+$Comp
+L JUMPER3 JP7
+U 1 1 58991CB2
+P 7795 5825
+F 0 "JP7" V 7795 5925 50  0000 L CNN
+F 1 "JUMPER3" H 7795 5925 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 7795 5825 60  0001 C CNN
+F 3 "" H 7795 5825 60  0000 C CNN
+	1    7795 5825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7705 5575 7795 5575
+Wire Wire Line
+	7960 5825 7895 5825
+Wire Wire Line
+	7795 6075 7705 6075
+Wire Wire Line
+	8060 5825 8130 5825
+$Comp
+L JUMPER3 JP8
+U 1 1 58993380
+P 8230 5825
+F 0 "JP8" V 8230 5925 50  0000 L CNN
+F 1 "JUMPER3" H 8230 5925 50  0001 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 8230 5825 60  0001 C CNN
+F 3 "" H 8230 5825 60  0000 C CNN
+	1    8230 5825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8230 5575 8335 5575
+Wire Wire Line
+	8230 6075 8335 6075
 $EndSCHEMATC
