@@ -1,44 +1,49 @@
-# Power module
-Power module connects the solar cell and battery and provides a 5V output to the rest of the system with the following features. [Battery academy article](http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries) highlights some methods for prolonged life of cells and respective charge voltages and profiles, decreasing the charge voltage to 4.0V and depth of discharge to 50%, several thousand cycles can be expected. As the battery life for Solarcast is rather low, we expect charging every day, but about 11 days operation on a single charge. Thus even without reduced charge voltage, we should expect a lifetime of 1000s of cycles, sufficient for a few years operation.
+### IoT power module description
 
-# Features
- 1. Charge battery from 6W Solar cell or USB power input
- 2. Output 5V with at least 2A current capability
- 3. Provide current measurement and battery voltage data, best via I2C
- 4. Low standby current consumption/self-discharge
+## GENERAL DESCRIPTION
 
-# Implementation
-The most straightforward implementation is using a pre-built power bank module, provided one exist satisfying the following requirements:
- * Solar cell input for charging
- * No minimal current shut-off (low standby mode consumption ~0.1mA)
- * Battery protection (under-voltage, over-voltage, cell-failure)
- * Low-quiescent current of the DC-DC 5V output stage
+IoT power module is powered from single lithium-ion cells (2/4/6 cells in parallel) and provides 3V3 and 5V stabilized output as well as battery output. All inputs can be turned off to avoid power consumption, however by default 3V3 output is always active (see later). Both switcher chips are buck-boost topology and operate with very low current when idle (< 100 uA)
 
-# IoT battery pack design
-Upon closer inspection of available systems we have decided to construct our won battery pack for general use with IoT applications and prepared [detailed requirements](IoT-battery-pack-spec.md) for it. The first version of the IoT battery pack has been designed and is being tested. Source files are in this repository.
+The module itself is equipped with switcher battery charger, where charging current can be externally programmed using resistors (R56, R58) or programming through I2C interface is also possible. An add-on module enables charging from external solar panel or other input, where integrated electronics adjusts the current in a way, that current is lowered when Uin_min threshold is achieved (currently at 4V5). Other option is charging through microUSB port with 5 VDC.
 
-![PCB preview](IoT-battery-pack.jpg)
- 
- 
-## Power bank candidates
-Three options have been selected for detailed analysis to determine the best option for implementation.
+The module can be equipped with Nordic nRF51822 microprocessor (M0 with BLE), that can be used to monitor and control charging process. Additionally, fuel gauge MAX17201 chip is integrated, which can monitor all battery parameters such as voltage, current, temperature, calculates state-of-charge (SOC), state-of-health (SOH) and many other parameters.
 
-### LiPo cell + Adafruit LiPo charger
-Constructing a single cell LiPo power unit from components is feasible and has been tested, however does not feature cell protection and has a single cell configuration, increasing the complexity of the power system due to its operation in battery voltage operational range.
+## BASIC BOARD OVERVIEW
 
-### Cheero Power Plus 3 CHE067
-The [Cheero Power Plus 3](https://www.cheero.net/product_tag/power-plus-3/) is a 13400mAh rated power bank with 2S2P cell configuration  with 4 cells LGEBF1L1865 and a measured capacity at the 5V output of 8800mAh. It features a step-up converter for charging with under-voltage protection to prevent the supply from overloading when below 4.5V input and over-voltage protection at about 7V. Modification with an INA219 current measurement module on the positive battery output allows measuring the charge and discharge currents as well as the cell battery. Low-cut off voltage: 5.97V Charge voltage: 8.22V for 2S configuration.
+![diagram](IoT-battery-pack-pinout.png)
 
-Step-up controller: U1 marked AWF608 32pin IC with integrated switch, output connected directly to the battery. Boost DC/DC Charger With Input Current Limiter
-Step-down controller: U11 marked MPFP 8758
+J2, J3, J4 (bottom left): Battery connectors, 3 pcs (JST 2-pole)
+Connect to lithium battery pack. 3 packs can be connected simoultanously. Each branch is protected using 5A SMD fuse. 
+IMPORTANT! 
+ 1. Always connect only battery packs with similar voltage/charging state. Connecting i.e. empty and full battery pack will drain huge current from full battery and burn fuse as well as damage to the batteries can be done!
+ 1. GND of the cells and GND of the system is not the same as there is a shunt resistor (R32, R57) in line between Cell_gnd and System_gnd.
 
-Capacity test: 1.5A discharge current : 8800mAh@5V 
+J6 (top left): PWR connector (IDC10)
+1 - I2C SCL (3V3)
+2 - I2C SDA (3V3)
+3 - 5V0 output*
+4 - 5V0_enable pin*
+5 - 3V3 output (always on by default**)
+6 - 3V3_enable pin (not used by default**)
+7 - Vbat output (same logic as 5V0 output*)
+8 - Vbat_enable pin
+9 - GND
+10 - GND
 
-### Voltaics V44 solar power bank
-The [Voltaics V44 USB battery](https://www.voltaicsystems.com/v44) is a purpose built solar power bank for charging via solar cell or USB with 12000mAh capacity. Internally it uses a 4P configuration of flat li-po cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features. Charge voltage is 4.25V.
+*By default, 5V0 output is disabled and can only be enabled if pulling 5V0 enable pin high. In case, that constant voltage is required on the 5V0 output, R36 must be populated. This will create resistor divider to define voltage level, when power will disable due to under-voltage condition.
 
-Capacity test: 1.5A discharge current : 6000mAh@5V
-Charge after: 8580mAh@5V
+**By default, 3V3 output is always active and is disabled only, when under-voltage condition occurs (set to approx. 3V using R26 and R31). If you want to enable 3V3_enable control, R26 must be removed.
 
-### Voltaics V44 solar power bank
-The [Voltaics V15 USB battery](https://www.voltaicsystems.com/v15) is an USB power bank with 4000mAh capacity. Internally it uses a 2P configuration of flat cells. An OTP ht46r066b microcontroller implements the thermal protection, current sensing and other protection features.
+J8 + micro USB (middle right): +5 VDC power supply
+Input for stabilized 5V power supply, which is connected to the charging chip via diode D10. By default (if no charging module is installed) charging current is set to 0,7 A. 
+If you want to increase charging current, connect +5V to U_sense pin (J12, pin 3; yellow/pink).
+
+J9 (bottom right): external charging voltage (JST 2-pole)
+Input for solar panel or other power source (voltage depends on a module installed).
+
+J11, J12 (bottom middle): connectors for add-on charging board
+Module has prepared option to install add-on module with additional charger; this way i.e. MPPT module or wide-range DCDC charger can be installed and replaced if required.
+There are also I2C pins present at J12 as well as one additional pin from MCU as well se Usense pin, which regulates charging current for the on-board charging chip.
+
+J13 (bottom middle): connector for battery NTC thermistor (10k)
+NTC thermistor must be thermally attached to the battery cell.
