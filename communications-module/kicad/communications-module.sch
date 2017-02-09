@@ -56,7 +56,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Solarcast Communications Module"
-Date "2017-02-07"
+Date "2017-02-09"
 Rev "1.0"
 Comp "Institute IRNAS Rače"
 Comment1 ""
