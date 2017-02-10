@@ -1360,6 +1360,4 @@ Wire Wire Line
 Wire Wire Line
 	7280 2850 7280 2770
 Connection ~ 7280 2770
-Text Notes 2150 940  0    118  ~ 0
-UARTS !!
 $EndSCHEMATC
