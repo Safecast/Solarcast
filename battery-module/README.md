@@ -12,7 +12,7 @@ The module can be equipped with Nordic nRF51822 microprocessor (M0 with BLE), th
 
 ![diagram](IoT-battery-pack-pinout.png)
 
-J2, J3, J4 (bottom left): Battery connectors, 3 pcs (JST 2-pole)
+### J2, J3, J4 (bottom left): Battery connectors, 3 pcs (JST 2-pole)
 Connect to lithium battery pack. 3 packs can be connected simoultanously. Each branch is protected using 5A SMD fuse. 
 IMPORTANT! 
  1. Always connect only battery packs with similar voltage/charging state. Connecting i.e. empty and full battery pack will drain huge current from full battery and burn fuse as well as damage to the batteries can be done!
