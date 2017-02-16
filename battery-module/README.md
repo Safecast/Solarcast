@@ -18,32 +18,33 @@ IMPORTANT!
  1. Always connect only battery packs with similar voltage/charging state. Connecting i.e. empty and full battery pack will drain huge current from full battery and burn fuse as well as damage to the batteries can be done!
  1. GND of the cells and GND of the system is not the same as there is a shunt resistor (R32, R57) in line between Cell_gnd and System_gnd.
 
-J6 (top left): PWR connector (IDC10)
-1 - I2C SCL (3V3)
-2 - I2C SDA (3V3)
-3 - 5V0 output*
-4 - 5V0_enable pin*
-5 - 3V3 output (always on by default**)
-6 - 3V3_enable pin (not used by default**)
-7 - Vbat output (same logic as 5V0 output*)
-8 - Vbat_enable pin
-9 - GND
-10 - GND
+### J6 (top left): PWR connector (IDC10):
+
+1. - I2C SCL (3V3)
+2. - I2C SDA (3V3)
+3. - 5V0 output*
+4. - 5V0_enable pin*
+5. - 3V3 output (always on by default**)
+6. - 3V3_enable pin (not used by default**)
+7. - Vbat output (same logic as 5V0 output*)
+8. - Vbat_enable pin
+9. - GND
+10. - GND
 
 *By default, 5V0 output is disabled and can only be enabled if pulling 5V0 enable pin high. In case, that constant voltage is required on the 5V0 output, R36 must be populated. This will create resistor divider to define voltage level, when power will disable due to under-voltage condition.
 
 **By default, 3V3 output is always active and is disabled only, when under-voltage condition occurs (set to approx. 3V using R26 and R31). If you want to enable 3V3_enable control, R26 must be removed.
 
-J8 + micro USB (middle right): +5 VDC power supply
+### J8 + micro USB (middle right): +5 VDC power supply
 Input for stabilized 5V power supply, which is connected to the charging chip via diode D10. By default (if no charging module is installed) charging current is set to 0,7 A. 
 If you want to increase charging current, connect +5V to U_sense pin (J12, pin 3; yellow/pink).
 
-J9 (bottom right): external charging voltage (JST 2-pole)
+### J9 (bottom right): external charging voltage (JST 2-pole)
 Input for solar panel or other power source (voltage depends on a module installed).
 
-J11, J12 (bottom middle): connectors for add-on charging board
+### J11, J12 (bottom middle): connectors for add-on charging board
 Module has prepared option to install add-on module with additional charger; this way i.e. MPPT module or wide-range DCDC charger can be installed and replaced if required.
 There are also I2C pins present at J12 as well as one additional pin from MCU as well se Usense pin, which regulates charging current for the on-board charging chip.
 
-J13 (bottom middle): connector for battery NTC thermistor (10k)
+### J13 (bottom middle): connector for battery NTC thermistor (10k)
 NTC thermistor must be thermally attached to the battery cell.
