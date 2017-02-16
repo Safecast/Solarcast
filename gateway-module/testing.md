@@ -1,4 +1,4 @@
-Gateway Module testing
+Gateway Module testing:
 
 * U4 TPS79133
 	* measure 3.3V on pin 5
