@@ -20,6 +20,8 @@ IMPORTANT!
 
 ### J6 (top left): PWR connector (IDC10):
 
+![diagram](Iot-batpack-j6.png)
+
 1. - I2C SCL (3V3)
 2. - I2C SDA (3V3)
 3. - 5V0 output*
