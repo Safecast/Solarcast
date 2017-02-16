@@ -54,3 +54,43 @@ Communications Module testing:
 * U6 TPS2064
   * measure 3.3V on pins 2,5,8
   * check ENABLE-TWI, measure 3.3V on pin 7
+
+* U11 FONA_3G
+  * check VBAT on pin 2
+  * check 3.3V on pin 4
+  * check UART
+
+* U13 RockBLOCK
+  * check 5V on pins 4,8
+  * check UART
+  * check 3.3V on pin 12
+
+* U16 FGPMMOPA6H GPS
+  * check 3.3V on pin 1
+  * check VBAT on pin 4
+  * check LED D3 blinking
+  * check UART
+  
+* U19 Gateway Module LORA
+  * check 5V on pins 2,4
+  * check UART
+
+* U14,U18 SN74LV4052A
+  * check UART multiplexing
+
+* U20 TPS2064
+  * measure VBAT on pin 2
+  * measure 3.3V on pins 5,8
+  * check ENABLE-FONA, measure VBAT on pin 7
+  
+* U12 TPS2064
+  * measure 3.3V on pin 2
+  * measure 3.3V on pins 5,8
+  * check ENABLE-FONA, measure 3.3V on pin 7
+  * check ENABLE-GPS, measure 3.3V on pin 6
+  
+* U15 TPS2064
+  * measure 5V on pin 2
+  * measure 3.3V on pins 5,8
+  * check ENABLE-ROCK, measure 5V on pin 7
+  * check ENABLE-LORA, measure 5V on pin 6
