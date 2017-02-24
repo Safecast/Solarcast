@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/user/Desktop/Solarcast/communications-module/kicad/communications-module.sch)
-    (date "24.2.2017 15:21:59")
+    (date "24.2.2017 15:24:34")
     (tool "Eeschema 4.0.0-rc1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -409,6 +409,96 @@
       (sheetpath (names /UART/) (tstamps /589D6D6D/))
       (tstamp 58ACB0A6)))
   (libparts
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part INDUCTOR)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib device) (part JUMPER3)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) JUMPER3))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
+    (libpart (lib device) (part Jumper_NC_Small)
+      (description "Jumper normally close")
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) Jumper_NC_Small))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib conn) (part CONN_01X05)
+      (footprints
+        (fp Pin_Header_Straight_1X05)
+        (fp Pin_Header_Angled_1X05)
+        (fp Socket_Strip_Straight_1X05)
+        (fp Socket_Strip_Angled_1X05))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X05))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))))
     (libpart (lib conn) (part USB_A)
       (description "A connector")
       (footprints
@@ -577,33 +667,6 @@
         (pin (num 2) (name VCC) (type input))
         (pin (num 3) (name SDA) (type input))
         (pin (num 4) (name SCL) (type input))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib conn) (part CONN_01X05)
-      (footprints
-        (fp Pin_Header_Straight_1X05)
-        (fp Pin_Header_Angled_1X05)
-        (fp Socket_Strip_Straight_1X05)
-        (fp Socket_Strip_Angled_1X05))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X05))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))))
     (libpart (lib ufl_conn) (part uFL_conn)
       (fields
         (field (name Reference) U)
@@ -735,73 +798,12 @@
         (pin (num 5) (name OC2*) (type input))
         (pin (num 6) (name OUT2) (type input))
         (pin (num 7) (name OUT1) (type input))
-        (pin (num 8) (name OC1*) (type input))))
-    (libpart (lib device) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part Jumper_NC_Small)
-      (description "Jumper normally close")
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) Jumper_NC_Small))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
-      (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive))))
-    (libpart (lib device) (part JUMPER3)
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) JUMPER3))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))))
-    (libpart (lib device) (part INDUCTOR)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive)))))
+        (pin (num 8) (name OC1*) (type input)))))
   (libraries
     (library (logical device)
       (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical conn)
+      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical bme280)
       (uri C:\Users\user\Desktop\Solarcast\communications-module\kicad\bme280.lib))
     (library (logical nrf52832)
@@ -825,9 +827,7 @@
     (library (logical pwr_conn)
       (uri C:\Users\user\Desktop\Solarcast\communications-module\kicad\pwr_conn.lib))
     (library (logical communications-module-cache)
-      (uri C:\Users\user\Desktop\Solarcast\communications-module\kicad\communications-module-cache.lib))
-    (library (logical conn)
-      (uri "D:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+      (uri C:\Users\user\Desktop\Solarcast\communications-module\kicad\communications-module-cache.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref U20) (pin 1))
