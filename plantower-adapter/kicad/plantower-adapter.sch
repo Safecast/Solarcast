@@ -1,0 +1,201 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:plantower_pm2
+LIBS:plantower-adapter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Solarcast Plantower Sensor Adapter"
+Date "2017-02-24"
+Rev "1.0"
+Comp "Institute IRNAS Rače"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Plantower_PM2.5_PMS_5003 U1
+U 1 1 58B09138
+P 4235 3920
+F 0 "U1" H 3860 4495 60  0000 C CNN
+F 1 "Plantower_PM2.5_PMS_5003" H 4110 3495 60  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 4180 3405 60  0000 C CNN
+F 3 "" H 4235 3920 60  0000 C CNN
+	1    4235 3920
+	1    0    0    -1  
+$EndComp
+$Comp
+L Plantower_PM2.5_PMS_5003 U2
+U 1 1 58B091C5
+P 6500 3920
+F 0 "U2" H 6125 4495 60  0000 C CNN
+F 1 "Plantower_PM2.5_PMS_5003" H 6375 3495 60  0000 C CNN
+F 2 "Molex-53047-0810:Molex-53047-0810" H 6360 3405 60  0000 C CNN
+F 3 "" H 6500 3920 60  0000 C CNN
+	1    6500 3920
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 58B0A32C
+P 4625 3355
+F 0 "#FLG01" H 4625 3450 50  0001 C CNN
+F 1 "PWR_FLAG" H 4625 3535 50  0000 C CNN
+F 2 "" H 4625 3355 60  0000 C CNN
+F 3 "" H 4625 3355 60  0000 C CNN
+	1    4625 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 58B0A344
+P 4835 3115
+F 0 "#FLG02" H 4835 3210 50  0001 C CNN
+F 1 "PWR_FLAG" H 4835 3295 50  0000 C CNN
+F 2 "" H 4835 3115 60  0000 C CNN
+F 3 "" H 4835 3115 60  0000 C CNN
+	1    4835 3115
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 58B0A35C
+P 5050 3355
+F 0 "#FLG03" H 5050 3450 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 3535 50  0000 C CNN
+F 2 "" H 5050 3355 60  0000 C CNN
+F 3 "" H 5050 3355 60  0000 C CNN
+	1    5050 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 58B0A374
+P 5265 3115
+F 0 "#FLG04" H 5265 3210 50  0001 C CNN
+F 1 "PWR_FLAG" H 5265 3295 50  0000 C CNN
+F 2 "" H 5265 3115 60  0000 C CNN
+F 3 "" H 5265 3115 60  0000 C CNN
+	1    5265 3115
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG05
+U 1 1 58B0A38C
+P 5480 3355
+F 0 "#FLG05" H 5480 3450 50  0001 C CNN
+F 1 "PWR_FLAG" H 5480 3535 50  0000 C CNN
+F 2 "" H 5480 3355 60  0000 C CNN
+F 3 "" H 5480 3355 60  0000 C CNN
+	1    5480 3355
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 58B0A3A4
+P 5730 3110
+F 0 "#FLG06" H 5730 3205 50  0001 C CNN
+F 1 "PWR_FLAG" H 5730 3290 50  0000 C CNN
+F 2 "" H 5730 3110 60  0000 C CNN
+F 3 "" H 5730 3110 60  0000 C CNN
+	1    5730 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 58B0A3BC
+P 5945 3355
+F 0 "#FLG07" H 5945 3450 50  0001 C CNN
+F 1 "PWR_FLAG" H 5945 3535 50  0000 C CNN
+F 2 "" H 5945 3355 60  0000 C CNN
+F 3 "" H 5945 3355 60  0000 C CNN
+	1    5945 3355
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4585 3470 6150 3470
+Wire Wire Line
+	4585 3570 6150 3570
+Wire Wire Line
+	4585 3670 6150 3670
+Wire Wire Line
+	4585 3770 6150 3770
+Wire Wire Line
+	4585 3870 6150 3870
+Wire Wire Line
+	4585 3970 6150 3970
+Wire Wire Line
+	4585 4070 6150 4070
+Wire Wire Line
+	4585 4170 6150 4170
+Wire Wire Line
+	4625 3355 4625 3470
+Connection ~ 4625 3470
+Wire Wire Line
+	4835 3115 4835 3570
+Connection ~ 4835 3570
+Wire Wire Line
+	5050 3355 5050 3670
+Connection ~ 5050 3670
+Wire Wire Line
+	5265 3115 5265 3770
+Connection ~ 5265 3770
+Wire Wire Line
+	5480 3355 5480 3870
+Connection ~ 5480 3870
+Wire Wire Line
+	5730 3110 5730 3970
+Connection ~ 5730 3970
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 58B0A947
+P 6215 3105
+F 0 "#FLG08" H 6215 3200 50  0001 C CNN
+F 1 "PWR_FLAG" H 6215 3285 50  0000 C CNN
+F 2 "" H 6215 3105 60  0000 C CNN
+F 3 "" H 6215 3105 60  0000 C CNN
+	1    6215 3105
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5945 3355 5945 4070
+Connection ~ 5945 4070
+Wire Wire Line
+	6215 3105 6215 3355
+Wire Wire Line
+	6215 3355 6060 3355
+Wire Wire Line
+	6060 3355 6060 4170
+Connection ~ 6060 4170
+$EndSCHEMATC
