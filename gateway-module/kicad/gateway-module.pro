@@ -1,4 +1,4 @@
-update=3.2.2017 10:45:15
+update=21.2.2017 15:57:27
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,7 +68,7 @@ LibName36=small_i2c_oled
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=../
+PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=

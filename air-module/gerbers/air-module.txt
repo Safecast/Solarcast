@@ -1,5 +1,5 @@
 M48
-;DRILL file {KiCad 4.0.0-rc1-stable} date 3.2.2017 11:52:21
+;DRILL file {KiCad 4.0.0-rc1-stable} date 24.2.2017 10:05:45
 ;FORMAT={2:4/ absolute / inch / suppress leading zeros}
 FMAT,2
 INCH,TZ
