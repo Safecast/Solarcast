@@ -1,6 +1,8 @@
 # Air module for Solarcast
 Air module is a standalone sensor unit that is a part of the Solarcast assembly and houses two particle sensors and a temperature and humidity sensor along with an optional BLE processor module.
 
+![Air-module](/img/air-1.jpg)
+
 ## Design specification
 * BLE module NRF [nRF52832 ANT](https://www.tindie.com/products/hnhoan/nrf52832-ant-bluetooth-le-arm-cortex-m4f-30-io/)
 * Particle sensor [Alphasense OPC-N2](http://www.alphasense.com/index.php/products/optical-particle-counter/) (SPI)
