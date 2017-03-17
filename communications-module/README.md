@@ -1,6 +1,8 @@
 # Communications module for Solarcast
 Communications module operates as the main module for the complete Solarcast assembly and is primarily a BLE device with other comms modules being plugged in.
 
+![Communications-module](/img/communication.jpg)
+
 ## Design specification
 * NRF module [nRF52832 ANT](https://www.tindie.com/products/hnhoan/nrf52832-ant-bluetooth-le-arm-cortex-m4f-30-io/)
 * Programmer [CMSIS-DAP](https://www.tindie.com/products/hnhoan/cmsis-dap-arm-debug-jtagswd-module-drag-and-drop/)
