@@ -2,11 +2,11 @@
 Safecast Solarcast sensor device is designed to operate off-grid and sense environmental parameters. It consists of 5 key modules designed for maximal reuse.
 
 #Modular design
- 1. Air sensor module
- 2. Geiger sensor module
- 3. Battery power module
- 4. Communications module
- 5. Gateway module
+ 1. [Air sensor module](/air-module)
+ 2. [Geiger sensor module](/geiger-module)
+ 3. [Battery power module](/battery-module)
+ 4. [Communications module](/communications-module)
+ 5. [Gateway module](/gateway-module)
 
 In an optimal design all modules have their own BLE processor and can be directly combined between each other, initial design is however only partially modular.
 
