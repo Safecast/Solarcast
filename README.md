@@ -10,5 +10,8 @@ Safecast Solarcast sensor device is designed to operate off-grid and sense envir
 
 In an optimal design all modules have their own BLE processor and can be directly combined between each other, initial design is however only partially modular.
 
+![Solarcast-1](/img/solarcast-1.jpg)
+![Solarcast-2](/img/solarcast-5.png)
+
 ## Design parameters
 The PCBs have to be designed in KiCad package.
