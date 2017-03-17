@@ -1,7 +1,7 @@
 # Solarcast
 Safecast Solarcast sensor device is designed to operate off-grid and sense environmental parameters. It consists of 5 key modules designed for maximal reuse.
 
-#Modular design
+# Modular design
  1. [Air sensor module](/air-module)
  2. [Geiger sensor module](/geiger-module)
  3. [Battery power module](/battery-module)
