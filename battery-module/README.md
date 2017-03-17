@@ -8,6 +8,8 @@ The module itself is equipped with switcher battery charger, where charging curr
 
 The module can be equipped with Nordic nRF51822 microprocessor (M0 with BLE), that can be used to monitor and control charging process. Additionally, fuel gauge MAX17201 chip is integrated, which can monitor all battery parameters such as voltage, current, temperature, calculates state-of-charge (SOC), state-of-health (SOH) and many other parameters.
 
+![Battery-module](/img/battery-1.jpg)
+
 ## BASIC BOARD OVERVIEW
 
 ![diagram](IoT-battery-pack-pinout.png)
