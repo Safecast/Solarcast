@@ -1,6 +1,8 @@
 # Gateway module for Solarcast
 Gateway module implements LORA communication for two purposes, installing it inside the Solarcast device as a LORA communications module as well as attachign it to a RaspberryPi to act as a gateway.
 
+![Gateway](/img/gateway.jpg)
+
 ## Design specification
 * LORA module [Microchip RN2483](http://www.microchip.com/wwwproducts/en/RN2483) for EU band, alternatively RN2903 for US band
 * SMA connector for 434MHz (RF layout guide on [datasheet page 10](http://ww1.microchip.com/downloads/en/DeviceDoc/50002346B.pdf))
