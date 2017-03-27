@@ -4,17 +4,17 @@ Purpose of this testing is to verify correct operation of assembled circuit boar
 ## Voltage and current check:
 Validating correct operation of power switches, supplies and other devices.
 
-1. Connect Amp meter on J15 on IoT Battery Pack
- * Expect reading of about 0.12mA
-1. Connect IoT battery pack with IDC10 cable to Comms board
- * Expect D3 to start blinking and about 28mA current draw
-1. Connect computer to programmer with micro-USB cable
- * Expect the device to appear as MBED USB drive.
- * Upload solarcast-powerdebug-on.bin firmware
-1. Disconnect USB and power cycle
- * Expect D1 red LED to be on
- * Expect D2 yellow LED to be on
- * Expect D3 red LED to be blinking
+* Connect Amp meter on J15 on IoT Battery Pack
+  * Expect reading of about 0.12mA
+* Connect IoT battery pack with IDC10 cable to Comms board
+  * Expect D3 to start blinking and about 28mA current draw
+* Connect computer to programmer with micro-USB cable
+  * Expect the device to appear as MBED USB drive.
+  * Upload solarcast-powerdebug-on.bin firmware
+* Disconnect USB and power cycle
+  * Expect D1 red LED to be on
+  * Expect D2 yellow LED to be on
+  * Expect D3 red LED to be blinking
  * Expect current draw of about 27mA
  * Expect the following voltages on power switch outputs
   * JP17 - TWI - 3.3V
