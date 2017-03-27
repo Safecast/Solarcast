@@ -35,7 +35,7 @@ Validating correct operation of power switches, supplies and other devices.
 
 
 
-
+### Chip level debugging
 
 * U1 nRF52832:
   * measure 3.3V on pins 18
