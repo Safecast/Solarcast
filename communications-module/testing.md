@@ -1,4 +1,41 @@
-#Communications Module testing:
+### Communications Module testing:
+Purpose of this testing is to verify correct operation of assembled circuit boards.
+
+## Voltage and current check:
+Validating correct operation of power switches, supplies and other devices.
+
+1. Connect Amp meter on J15 on IoT Battery Pack
+ * Expect reading of about 0.12mA
+1. Connect IoT battery pack with IDC10 cable to Comms board
+ * Expect D3 to start blinking and about 28mA current draw
+1. Connect computer to programmer with micro-USB cable
+ * Expect the device to appear as MBED USB drive.
+ * Upload solarcast-powerdebug-on.bin firmware
+1. Disconnect USB and power cycle
+ * Expect D1 red LED to be on
+ * Expect D2 yellow LED to be on
+ * Expect D3 red LED to be blinking
+ * Expect current draw of about 27mA
+ * Expect the following voltages on power switch outputs
+  * JP17 - TWI - 3.3V
+  * JP22 - FONA_VBAT - Vbat (3.5-4.2V)
+  * JP18 - FONA_3V3 - 3.3V
+  * JP19 - GPS - 3.3V
+  * JP21 - LORA - 5.0V
+  * JP20 - ROCK - 5.0V
+  * JP11 - AIR - 5.0V
+  * JP12 - GEIGER - 5.0V
+ * Expect PWR-SWITCH-OC pin to be high (3.3V)
+
+ 
+  
+
+
+
+
+
+
+
 
 * U1 nRF52832:
   * measure 3.3V on pins 18
