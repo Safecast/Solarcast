@@ -15,16 +15,16 @@ Validating correct operation of power switches, supplies and other devices.
   * Expect D1 red LED to be on
   * Expect D2 yellow LED to be on
   * Expect D3 red LED to be blinking
- * Expect current draw of about 27mA
+  * Expect current draw of about 27mA
  * Expect the following voltages on power switch outputs
-  * JP17 - TWI - 3.3V
-  * JP22 - FONA_VBAT - Vbat (3.5-4.2V)
-  * JP18 - FONA_3V3 - 3.3V
-  * JP19 - GPS - 3.3V
-  * JP21 - LORA - 5.0V
-  * JP20 - ROCK - 5.0V
-  * JP11 - AIR - 5.0V
-  * JP12 - GEIGER - 5.0V
+   * JP17 - TWI - 3.3V
+   * JP22 - FONA_VBAT - Vbat (3.5-4.2V)
+   * JP18 - FONA_3V3 - 3.3V
+   * JP19 - GPS - 3.3V
+   * JP21 - LORA - 5.0V
+   * JP20 - ROCK - 5.0V
+   * JP11 - AIR - 5.0V
+   * JP12 - GEIGER - 5.0V
  * Expect PWR-SWITCH-OC pin to be high (3.3V)
 
  
