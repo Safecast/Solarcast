@@ -1,5 +1,7 @@
 ## Air Sensor test - 7 unit analysis
-To validate the performance of air sensors a test has been performed in the clean air chamber with all these units present simoultaneously for a duration of about 4 hours, each unit reported measurements over that time and the graphs below show the results.
+To validate the performance of air sensors a test has been performed in the clean air chamber with all these units present simoultaneously for a duration of about 4 hours, each unit reported measurements over that time and the graphs below show the results. For the first part of the test the chamber was active and air was filtered, for the second part it was turned off and ambien air filled the chamber.
+
+![units in chamber](units_in_chamber.jpg)
 
 Devices as a part of this experiment:
 - 114699387
