@@ -1,12 +1,12 @@
 ## Air Sensor test - 3 unit analysis
 
 Devices as a part of this experiment:
--
--
--
+- 1238569003
+- 1660294046
+- 3709008148
 
 ## Battery status
-The following graphs show battery charge percentage (%), current (mA) and voltage results (V). We can observe that all units are discharging at a similar rate during the experimentation, except unit 3714913954 which is for some reason reporting contant voltage.
+The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. . We can observe that on normal days units will cycle between 3.9 and 4V. note that Charge percentage is the best calue to look at untill the Fuel gauge IC is configured/trained correctly for the cells.
 
 ![bat_charge](graphs/bat_charge.png)
 
@@ -16,7 +16,7 @@ The following graphs show battery charge percentage (%), current (mA) and voltag
 
 
 ## Pressure, temperature and humidity
-The following graphs show relative humidity (%), pressure (mbar) and temperature (deg C). We can observe the variance of co-located units in the measured values. Temperature between all units is within 1degC, while humidiry varies for about 2-3%, which is as specified for the [BME280](https://www.bosch-sensortec.com/bst/products/all_products/bme280) sensor in teh datasheet. Note vairation is between units as such, not just an error to the actual valuen of all sensors. ENV_HUMID value of unit 230442684 stands out and likely requires a sensor replacement.
+The following graphs show relative humidity (%), pressure (mbar) and temperature (deg C). We can observe daily temperature spikes that are clearly above the environmental temperature and thus also the humidity readings are not very representative of the environment.
 
 ![enc_humid](graphs/enc_humid.png)
 
@@ -38,7 +38,7 @@ Radiation measurements are observed for any significant out of range values, we 
 ![lnd_7318u](graphs/lnd_7318u.png)
 
 ## OPC Air sensor PM values
-Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We observe that all sensors converge to 0 for the first part of the test in the clean air chamber and rise to the ambient level when the filtering is turned off. Ambient values have a reasonably large deviation between sensors as such, in the given case up to 20 ug/m3 variation at any given time. Note that sensors have consistenlty higher or lower values across all particle sizes and thus deviation is unit specific.
+Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. 
 
 ![opc_pm01_0](graphs/opc_pm01_0.png)
 
@@ -47,7 +47,7 @@ Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 c
 ![opc_pm10_0](graphs/opc_pm10_0.png)
 
 ## PMS Air sensor PM values
-APMS sensors returns values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We observe that all sensors converge to 0 for the first part of the test in the clean air chamber and rise to the ambient level when the filtering is turned off. Ambient values have a reasonably large deviation between sensors as such, in the given case up to 10 ug/m3 variation at any given time. Note that sensors have consistenlty higher or lower values across all particle sizes and thus deviation is unit specific.
+APMS sensors returns values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We observe that PMS sensors measure concentration in more discrete levels and genrally agree with OPC measurements.
 
 ![pms_pm01_0](graphs/pms_pm01_0.png)
 
