@@ -1,10 +1,21 @@
-## Air Sensor test - 3 unit analysis
+## Air Sensor test - 19 unit analysis
 
-Devices as a part of this experiment:
+This test was the first try to evaluate performance in a dusty environment, which rather failed but produced some interesting results, see below for details.
 
+![setup](solarcast-dust-test.jpg)
+
+The units were stacked in the machine workshop with a large vacuum pump running between 0 and 4 hours period on these graphs and lifting lots of dust in the air.
+
+Timeline:
+ * 0-4h - pump running and dust circulating
+ * around 4h - additional dust added to the pump to disperse
+ * around 4h - pump turned off
+ * after 4h - pump turned off and space closed without any movement for settling period.
+
+One unit was mis-behaving during the experient, with pink colored data.
 
 ## Battery status
-The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. . We can observe that on normal days units will cycle between 3.9 and 4V. note that Charge percentage is the best calue to look at untill the Fuel gauge IC is configured/trained correctly for the cells.
+The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. We can see a reasonably similar discharge on all units but one, that requires servicing.
 
 ![bat_charge](graphs/bat_charge.png)
 
@@ -14,7 +25,7 @@ The following graphs show battery charge percentage (%), current (mA) and voltag
 
 
 ## Pressure, temperature and humidity
-The following graphs show relative humidity (%), pressure (mbar) and temperature (deg C). We can observe daily temperature spikes that are clearly above the environmental temperature and thus also the humidity readings are not very representative of the environment.
+The following graphs show relative humidity (%), pressure (mbar) and temperature (deg C). We can observe that during the first part of the experiment when teh fan was running, humidity measurements are significantly different between units, but later stabilize in steady air.
 
 ![enc_humid](graphs/enc_humid.png)
 
@@ -36,7 +47,7 @@ Radiation measurements are observed for any significant out of range values, we 
 ![lnd_7318u](graphs/lnd_7318u.png)
 
 ## OPC Air sensor PM values
-Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 concentration.
+Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We can see spikes during different times for different particle sizes, somewhat correlated to human intervention and introducing some extra dust around the 4 hour mark
 
 ![opc_pm01_0](graphs/opc_pm01_0.png)
 
@@ -45,7 +56,7 @@ Alpnasense OPC-N2 sensors return values of PM1, PM2.5 and PM10 counts in ug/m3 c
 ![opc_pm10_0](graphs/opc_pm10_0.png)
 
 ## PMS Air sensor PM values
-APMS sensors returns values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We observe that PMS sensors measure concentration in more discrete levels and genrally agree with OPC measurements.
+APMS sensors returns values of PM1, PM2.5 and PM10 counts in ug/m3 concentration. We observe that PMS sensors measure concentration in more discrete levels and genrally agree with OPC measurements, except around the 4 hour mark, when there was a high increase in large particles, recognized by OPC, but that significantly PMS.
 
 ![pms_pm01_0](graphs/pms_pm01_0.png)
 
