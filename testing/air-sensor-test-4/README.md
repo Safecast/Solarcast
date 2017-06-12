@@ -2,7 +2,7 @@
 
 This test was the first try to evaluate long term performance in an outdoor environment. The units were stacked in an open backyard garden and were exposed to all environmental influences day and night for two and a half days.
 
-![outdoor units](solarcast_outdoor.jpg)
+![outdoor units](solarcast-outdoor.jpg)
 
 The following units require further analysis and checks:
 
