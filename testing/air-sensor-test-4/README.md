@@ -2,14 +2,29 @@
 
 This test was the first try to evaluate long term performance in an outdoor environment. The units were stacked in an open backyard garden and were exposed to all environmental influences day and night for two and a half days.
 
-## Battery status
-The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. We can see a reasonably similar discharge on all units but two, that require servicing.
+![outdoor units](solarcast_outdoor.jpg)
 
-![bat_charge](graphs/bat_charge.png)
+The following units require further analysis and checks:
+
+ * 1875225345 - Charging less then the others, very high PMS readings: Replacing PMS and checking power supply.
+ * 3768313999 - Discharging much more slowly then the other units, has not reported any air measurements, which we can see from the lack of battery discharge. Checking why no air readings were done.
+ * 2670856639 - OPC sensor has zero readings, OPC needs replacement.
+ * 114699387 - very low PMS values, PMS needs replacement
+ 
+ Some of the following units have gone offline for some period of time during the test, they tend to recover after a while, the times when the units seem to be offline are rather correlated.
+ 
+ * 3373827677 - had been one offline multiple times for a number of hours
+ * 872300871 - had been offline multiple times for a number of hours
+
+
+## Battery status
+The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. We can see a reasonably similar discharge on all units but two, that require servicing. Note that charge percentage varies due to missing software calibration of the fuel gauge.
 
 ![bat_current](graphs/bat_current.png)
 
 ![bat_voltage](graphs/bat_voltage.png)
+
+![bat_charge](graphs/bat_charge.png)
 
 
 ## Pressure, temperature and humidity
