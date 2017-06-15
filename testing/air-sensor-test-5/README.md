@@ -4,18 +4,24 @@ This test was the first try to evaluate long term performance in an outdoor envi
 
 ![outdoor units](solarcast-outdoor.jpg)
 
+![outdoor placement](sensor-placement.png)
+
 The following units have suggested fixes and checks:
 
 Replacement of air sensor:
  * 1875225345 (too high readings) - replace PMS
+
+Note that the 4 offending OPC units are placed closer to the ground
  * 4267748403 (too high readings)  - replace OPC, PMS
  * 1244561775 (too high readings) - replace OPC
  * 4177786812 (too high readings)  - replace OPC
  * 1094924990 (too high readings) - replace OPC
- * 3768313999 (crashing due to OPC) - test unit with another OPC
+ 
+ THe following unit has a problem with BME0 sensor that must be replaced.
+ * 3768313999 (crashing due to OPC/BME0, likely a SW bug of floating-point) 
  
 Replacement of antenna:
- * 114699387
+ * 114699387 - done
 
 ## Battery status
 The following graphs show battery charge percentage (%), current (mA) and voltage results (V) on units of time in hours. We can see a reasonably similar discharge on all units but two, that require servicing. Note that charge percentage varies due to missing software calibration of the fuel gauge.
